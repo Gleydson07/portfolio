@@ -10,7 +10,7 @@ export function Header(){
             width="100%"
             position="fixed"
             zIndex="1"
-            bg="gray.800"
+            bg="black"
             align="center"
             justify="center"
         >

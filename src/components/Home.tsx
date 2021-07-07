@@ -3,6 +3,8 @@ import { Flex, Text, Box, Button, Image } from '@chakra-ui/react';
 import IImg from '../images/g1.png'
 import Typed from 'react-typed';
 
+import 'animate.css'
+
 export function Home(){
     return (
         <Flex
@@ -28,7 +30,7 @@ export function Home(){
                         bgClip="text"
                         fontSize="5xl"
                         fontWeight="extrabold"
-                        textAlign="left"
+                        textAlign="left" 
                     >
                         Seja bem vindo(a) !
                     </Text>
@@ -40,11 +42,7 @@ export function Home(){
                         textAlign="left"
                         as="span"
                     >
-                        <Typed                        
-                            strings={['Meu nome é&nbsp;']}
-                            typeSpeed={40}
-                            showCursor={false}
-                        />
+                        Meu nome é&nbsp; 
                     </Text>
                     
                     <Text
@@ -54,13 +52,7 @@ export function Home(){
                         textAlign="left"
                         as="span"
                     >
-                        <Typed
-                            strings={['Gleydson Albuquerque.']}
-                            typeSpeed={40}
-                            startDelay={800}
-                            showCursor={false}
-                        />
-
+                        Gleydson Albuquerque
                     </Text>
                     
                     <Text
@@ -70,15 +62,22 @@ export function Home(){
                         textAlign="left"
                         mt="1rem"
                     >
-                        <Typed
-                            strings={['Sou um estudante.', 'Sou um desenvolvedor frontend.']}
-                            typeSpeed={50}
-                            backSpeed={50}
-                            startDelay={2200}
-                            showCursor={false}
-                            loop={false}
-                            smartBackspace={true}
-                        />
+                        <>
+                            <Typed
+                                strings={['Sou um&nbsp;']}
+                                typeSpeed={50}
+                                showCursor={false}
+                            />
+                            <Typed
+                                strings={['estudante.', 'desenvolvedor frontend.', 'estudante e desenvolvedor frontend.']}
+                                typeSpeed={50}
+                                backSpeed={50}
+                                startDelay={800}
+                                showCursor={false}
+                                loop={true}
+                                smartBackspace={true}
+                            />
+                        </>
 
                     </Text>
                     
@@ -91,13 +90,7 @@ export function Home(){
                         fontWeight="300"
                         textAlign="left"
                     >
-                        <Typed
-                            strings={['Ao passo que aprimoro minhas habilidades e amplio meu conhecimento, percebo que o aprendizado é um processo prazeroso e infinito de constante evolução.🚀']}
-                            typeSpeed={35}
-                            startDelay={7000}
-                            showCursor={false}
-                        />
-
+                        Ao passo que aprimoro minhas habilidades e amplio meu conhecimento, percebo que o aprendizado é um processo prazeroso e infinito de constante evolução.🚀
                     </Text>
                     
                     <Text
@@ -108,21 +101,14 @@ export function Home(){
                         right="0"
                         bottom="0"
                     >
-                        <Typed
-                            strings={['Gleydson Albuquerque 😉']}
-                            typeSpeed={50}
-                            startDelay={16000}
-                            showCursor={false}
-                        />
-
+                        Gleydson Albuquerque 😉
                     </Text>
-                    
                 </Box>
 
                 <Box
                     w="350px"
-                    ml="5rem"
-                    >
+                    ml="5rem"               
+                >
                     <Image 
                         border="2px solid"
                         borderColor="cyan.400"
@@ -134,7 +120,7 @@ export function Home(){
                 </Box>
             </Flex>       
                 
-            <Box                 
+            <Box            
                 position="absolute"
                 bgGradient="linear(to-l, cyan.400, purple.500, purple.500, purple.500, cyan.400)"
                 bottom="5rem"
@@ -145,6 +131,7 @@ export function Home(){
                 justifyContent="center"
             >
                 <Button
+                    className="animate__animated animate__bounce animate__delay-5s animate_duration__5s"
                     height="5rem"
                     width="5rem"
                     borderRadius="50%"
@@ -159,7 +146,7 @@ export function Home(){
                         fontSize: "1.5rem",
                         fontWeight: "900",
                         borderColor: "purple.500", 
-                        borderWidth: "5px", 
+                        borderWidth: "5px",
                     }}
                 >
                     PUSH

@@ -19,8 +19,9 @@ export function About(){
                     h="85%"
                     w="300px"
                     my="auto"
+                    border="1px solid #0BC5EA"
                     borderRadius="0.5rem"
-                    bg="gray.900"
+                    // bg="black"
                 >
                     <Text>TESTE HEADER</Text>
                 </Flex>
