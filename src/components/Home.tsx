@@ -67,7 +67,7 @@ export function Home(){
                         backSpeed={50}
                         startDelay={1900}
                         showCursor={false}
-                        loop={true}
+                        loop={false}
                         smartBackspace={true}
                     />
 
@@ -100,7 +100,7 @@ export function Home(){
                     <Typed
                         strings={['Gleydson Albuquerque 😉']}
                         typeSpeed={60}
-                        startDelay={15500}
+                        startDelay={16000}
                         showCursor={false}
                     />
 
