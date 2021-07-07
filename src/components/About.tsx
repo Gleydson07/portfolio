@@ -20,7 +20,6 @@ export function About(){
                     w="300px"
                     my="auto"
                     borderRadius="0.5rem"
-                    border="10px solid purple.400"
                     bg="gray.900"
                 >
                     <Text>TESTE HEADER</Text>
@@ -29,6 +28,7 @@ export function About(){
                 <Flex
                     h="85%"
                     flex="1"
+                    border="1px solid green.100"
                 >
                     <Text>TESTE CONTENT</Text>
                 </Flex>
