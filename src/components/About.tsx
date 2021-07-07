@@ -1,13 +1,38 @@
-import { Flex } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 
 export function About(){
     return (
         <Flex
-            h="100vh"
-            align="center"
+            h="calc(100vh - 5rem)"
+            w="100%"
+            mx="auto"
             justify="center"
         >
-            <h1>About</h1>
+            <Flex
+                mx="3rem"
+                width="1440px"
+                alignItems="center"
+                justifyContent="space-between"
+                
+            >
+                <Flex
+                    h="85%"
+                    w="300px"
+                    my="auto"
+                    borderRadius="0.5rem"
+                    border="10px solid purple.400"
+                    bg="gray.900"
+                >
+                    <Text>TESTE HEADER</Text>
+                </Flex>
+
+                <Flex
+                    h="85%"
+                    flex="1"
+                >
+                    <Text>TESTE CONTENT</Text>
+                </Flex>
+            </Flex>
         </Flex> 
     )
 }

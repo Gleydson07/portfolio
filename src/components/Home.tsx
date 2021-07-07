@@ -8,11 +8,13 @@ export function Home(){
             flexDir="column"
             align="center"
             justify="center"
-            height="100vh"
+            h="100vh"
+            w="1440px"
+            mx="auto"
             position="relative"
         >
             <Box
-                width="700px"
+                width="690px"
                 height="350px"
                 position="relative"
             >

@@ -6,7 +6,7 @@ export function Header(){
     return (
         <Flex
             as="header"
-            height="20"
+            height="5rem"
             width="100%"
             position="fixed"
             zIndex="1"
