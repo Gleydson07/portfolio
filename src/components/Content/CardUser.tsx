@@ -22,8 +22,10 @@ export function CardUser(){
             bg="dark.50"
             py="8"
             px="6"
+            mt="100vh"
             rounded="md"
             flexDir="column"
+            position="fixed"
         >
             <Flex
                 width="100%"

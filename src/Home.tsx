@@ -9,20 +9,22 @@ export function Home(){
         <Flex
             h="100vh"
             minHeight="600px"
-            position="relative"            
+            flexDir="column"
+            align="center"
+            justifyContent="center"      
         >
             <Flex
                 position="relative"
                 align="center"
-                justify="center"
-                w="1440px"
+                justify="space-between"
+                w="1100px"
                 mx="auto"
                 my="auto"
                 py="2rem"
             >
                 <Box
                     h="100%"
-                    width="690px"
+                    width="700px"
                     height="350px"
                     position="relative"
                 >
@@ -108,11 +110,10 @@ export function Home(){
 
                 <Box
                     w="300px"
-                    minHeight="400px"
-                    ml="7rem"            
+                    minHeight="400px"          
                 >
                     <Image 
-                        className="animate__animated animate__delay-2s animate__bounce animate__slower animate__fadeInRight"
+                        className="animate__animated animate__slower animate__fadeInDown"
                         data-rellax-speed="7"
                         border="2px solid"
                         borderColor="cyan.400"
@@ -124,41 +125,32 @@ export function Home(){
                 </Box>
             </Flex>       
                 
-            <Box            
-                position="absolute"
-                bottom="5rem"
-                w="100%"
-                h="1.5rem"
-                display="flex"
-                alignItems="center"
-                justifyContent="center"
+            <Button      
+                bottom="3rem"              
+                className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
+                height="5rem"
+                width="5rem"
+                borderRadius="50%"
+                color="purple.500"
+                border="10px solid #0BC5EA77"
+                fontSize="1.125rem"
+                fontWeight="700"
+                transition="all 0.3s"
+                _hover={{
+                    bg: "gray.50", 
+                    color: "cyan.400", 
+                    fontSize: "3rem",
+                    fontWeight: "900",
+                    borderColor: "purple.500", 
+                    borderWidth: "5px",
+                }}
             >
-                <Button                    
-                    className="animate__animated animate__delay-3s animate__slower animate__flip"
-                    height="5rem"
-                    width="5rem"
-                    borderRadius="50%"
-                    color="purple.500"
-                    border="10px solid #0BC5EA77"
-                    fontSize="1.125rem"
-                    fontWeight="700"
-                    transition="all 0.3s"
-                    _hover={{
-                        bg: "gray.50", 
-                        color: "cyan.400", 
-                        fontSize: "3rem",
-                        fontWeight: "900",
-                        borderColor: "purple.500", 
-                        borderWidth: "5px",
-                    }}
-                >
-                    <Icon 
-                        as={TiArrowDownThick} 
-                        fontSize="3.5rem" 
-                        className="animate__animated animate__delay-5s animate__flip"
-                    />
-                </Button>
-            </Box>
+                <Icon 
+                    as={TiArrowDownThick} 
+                    fontSize="3.5rem" 
+                    className="animate__animated animate__delay-5s animate__flip"
+                />
+            </Button>
         </Flex>
     )
 }

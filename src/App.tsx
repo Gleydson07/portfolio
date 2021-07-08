@@ -1,6 +1,7 @@
 import React from 'react'
-import { PortFolio } from './components/Portfolio/Index';
 import { Home } from "./Home";
+import { About } from './About';
+import { PortFolio } from './Portfolio';
 import { Header } from './components/Header';
 
 import { ChakraProvider } from '@chakra-ui/react';
@@ -14,7 +15,8 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Header/>
-      {/* <Home/> */}
+      <Home/>
+      <About />
       <PortFolio />
       <Particles
         options={{

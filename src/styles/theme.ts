@@ -9,7 +9,8 @@ export const theme = extendTheme({
   colors: {
     dark: {
         900: "171923",
-        50: "#17192340"
+        100: "#17192350",
+        50: "#17192340",
     },
 
     light: {

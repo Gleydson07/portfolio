@@ -6,7 +6,7 @@ export function Card(){
                 width="100%"
                 height="20rem"
                 bg="dark.50"
-                my="1rem"
+                mb="1rem"
             >
                 <Text>
                     Titulo
