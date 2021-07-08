@@ -118,7 +118,7 @@ export function Home(){
                         border="2px solid"
                         borderColor="cyan.400"
                         objectFit="cover"
-                        borderRadius="1rem"
+                        borderRadius="0.25rem"
                         src={IImg} 
                         alt="hi"
                     />
