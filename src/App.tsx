@@ -14,7 +14,7 @@ function App() {
   return (
     <ChakraProvider theme={theme}>
       <Header/>
-      <Home/>
+      {/* <Home/> */}
       <PortFolio />
       <Particles
         options={{
@@ -23,7 +23,7 @@ function App() {
             zIndex: -1
           },
           background: {
-            color: "#000000"
+            color: "#000"
           },
           fpsLimit: 60,
           particles: {

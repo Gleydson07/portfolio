@@ -9,19 +9,20 @@ interface ContentProps{
 export function Content({children}: ContentProps){
     return (
         <Flex
-            h="calc(100vh - 5rem)"
             w="100%"
+            h="100vh"
             mx="auto"
-            justify="center"
-            bgAttachment="fixed"
+            flexDir="column"
+            justifyContent="flex-end"
+            alignItems="center"
+            // overflow="hidden"
         >
             <Flex
+                w="100%"
+                h="85%"
                 mx="3rem"
                 width="1440px"
-                height="80%"
-                alignSelf="center"
-                alignItems="center"
-                justifyContent="space-between"          
+                align="flex-start"
             >
                 <CardUser/>
 

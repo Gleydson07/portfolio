@@ -1,4 +1,4 @@
-import { SimpleGrid, GridItem, Flex, Text, Icon, Link } from '@chakra-ui/react'
+import { Flex, Text, Icon, Link } from '@chakra-ui/react'
 import { Card } from '../Card/Index';
 
 import { Content } from "../Content/Index";
@@ -7,48 +7,27 @@ export function PortFolio(){
     return (
         <Content>
             <Flex
-                h="100%"
                 w="100%"
-                px="1rem"
+                h="calc(100vh - 5rem)"
                 ml="2rem"
                 flex="1"
-                flexWrap="wrap"
-                justifyContent="space-between"
-                alignContent="space-between"
-                boxSizing="border-box"
-                overflow="visible"
-            >                
+                flexDir="column"
+            >     
+
+                <Text fontSize="2xl" align="right" fontWeight="600">Portfólio</Text>
                 <Flex
-                    m="0.25rem"
+                    w="100%"
+                    flexDir="column"
+                    justifyContent='center'
+                    align="center"
                 >
-                    <Card />                    
-                </Flex>
-                <Flex
-                    m="0.25rem"
-                >
-                    <Card />                    
-                </Flex>
-                <Flex
-                    m="0.25rem"
-                >
-                    <Card />                    
-                </Flex>
-                <Flex
-                    m="0.25rem"
-                >
-                    <Card />                    
-                </Flex>
-                <Flex
-                    m="0.25rem"
-                >
-                    <Card />                    
-                </Flex>
-                <Flex
-                    m="0.25rem"
-                >
-                    <Card />                    
-                </Flex>
-                
+              
+                    <Card />
+                    <Card />
+                    <Card />
+                    <Card />
+
+                </Flex>            
             </Flex>
         </Content>
     )

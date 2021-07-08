@@ -17,14 +17,12 @@ export function CardUser(){
     return (
         <Flex
             width="350px"
-            height="100%"
-            minHeight="600px"
+            height="650px"
             border="2px dashed #71809699"
-            bg="#05050599"
+            bg="dark.50"
             py="8"
             px="6"
             rounded="md"
-            align="flex-start"
             flexDir="column"
         >
             <Flex
@@ -55,8 +53,8 @@ export function CardUser(){
                 justify="space-between"
                 flexDir="column"
                 align="left"
-                mt="1rem"
-                lineHeight="1.75rem"
+                mt="1.5rem"
+                lineHeight="1.5rem"
             >
                 <Text fontSize="lg" fontWeight="500" color="purple.300">Dados Pessoais</Text>
                 <Text fontSize="sm">&nbsp;&nbsp;gassantos.dev@gmail.com</Text>
@@ -69,25 +67,26 @@ export function CardUser(){
                 justify="space-between"
                 flexDir="column"
                 align="left"
-                mt="1rem"
+                mt="1.5rem"
                 lineHeight="1.5rem"
             >
-                <Text fontSize="lg" fontWeight="500" color="purple.300">Dados Acadêmicos e Profissionais</Text>
+                <Text fontSize="lg" fontWeight="500" color="purple.300">Dados Profissionais e Acadêmicos</Text>
 
-                <Text fontSize="sm" color="gray.500" mt="0.5rem">&nbsp;&nbsp;Graduação</Text>
+                <Text fontSize="sm" color="gray.500" mt="1rem">&nbsp;&nbsp;Experiência Profissional</Text>
+                <Text fontSize="sm" as="span">&nbsp;&nbsp;Humm, você pode ter o privilégio de ter uma participação marcante em minha jornada.</Text>
+                <Link href="https://www.linkedin.com/in/gleydson07/" isExternal >
+                        <Text color="cyan.300">Conceda-me uma oportunidade.</Text>
+                </Link>
+                
+                <Text fontSize="sm" color="gray.500" mt="1rem">&nbsp;&nbsp;Graduação</Text>
                 <Text fontSize="sm">&nbsp;&nbsp;Bacharelado em Sistemas de Informação/2018</Text>
 
-                <Text fontSize="sm" color="gray.500" mt="0.5rem">&nbsp;&nbsp;Curso de técnicos</Text>
+                <Text fontSize="sm" color="gray.500" mt="1rem">&nbsp;&nbsp;Curso de técnicos</Text>
                 <Text fontSize="sm">&nbsp;&nbsp;ReactJS - Rocketseat/2021</Text>
                 <Text fontSize="sm">&nbsp;&nbsp;Postgress - Digital Innovation One/2021</Text>
                 <Text fontSize="sm">&nbsp;&nbsp;Git e Github - Digital Innovation One/2021</Text>
                 <Text fontSize="sm">&nbsp;&nbsp;API'S com NodeJS + MongoDB - Udemy/2020</Text>
 
-                <Text fontSize="sm" color="gray.500" mt="0.5rem">&nbsp;&nbsp;Experiência Profissional</Text>
-                <Text fontSize="sm" as="span">&nbsp;&nbsp;Humm, você pode ter o privilégio de ter uma participação marcante em minha jornada.</Text>
-                <Link href="https://www.linkedin.com/in/gleydson07/" isExternal >
-                        <Text color="cyan.300">Conceda-me uma oportunidade.</Text>
-                </Link>
             </Flex>
         
 
