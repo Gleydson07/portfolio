@@ -1,15 +1,15 @@
-import { Flex, Text, Box, Button, Image } from '@chakra-ui/react';
+import { Flex, Text, Box, Button, Image, Icon } from '@chakra-ui/react';
 
-import IImg from '../images/g1.png'
+import {TiArrowDownThick} from 'react-icons/ti'
+import IImg from './images/g1.png'
 import Typed from 'react-typed';
-
-import 'animate.css'
 
 export function Home(){
     return (
         <Flex
             h="100vh"
-            position="relative"
+            minHeight="600px"
+            position="relative"            
         >
             <Flex
                 position="relative"
@@ -18,6 +18,7 @@ export function Home(){
                 w="1440px"
                 mx="auto"
                 my="auto"
+                py="2rem"
             >
                 <Box
                     h="100%"
@@ -52,7 +53,7 @@ export function Home(){
                         textAlign="left"
                         as="span"
                     >
-                        Gleydson Albuquerque
+                        Gleydson A. da Silva Santos
                     </Text>
                     
                     <Text
@@ -106,10 +107,13 @@ export function Home(){
                 </Box>
 
                 <Box
-                    w="350px"
-                    ml="5rem"               
+                    w="300px"
+                    minHeight="400px"
+                    ml="7rem"            
                 >
                     <Image 
+                        className="animate__animated animate__delay-2s animate__bounce animate__slower animate__fadeInRight"
+                        data-rellax-speed="7"
                         border="2px solid"
                         borderColor="cyan.400"
                         objectFit="cover"
@@ -122,7 +126,6 @@ export function Home(){
                 
             <Box            
                 position="absolute"
-                bgGradient="linear(to-l, cyan.400, purple.500, purple.500, purple.500, cyan.400)"
                 bottom="5rem"
                 w="100%"
                 h="1.5rem"
@@ -130,8 +133,8 @@ export function Home(){
                 alignItems="center"
                 justifyContent="center"
             >
-                <Button
-                    className="animate__animated animate__bounce animate__delay-5s animate_duration__5s"
+                <Button                    
+                    className="animate__animated animate__delay-3s animate__slower animate__flip"
                     height="5rem"
                     width="5rem"
                     borderRadius="50%"
@@ -143,13 +146,17 @@ export function Home(){
                     _hover={{
                         bg: "gray.50", 
                         color: "cyan.400", 
-                        fontSize: "1.5rem",
+                        fontSize: "3rem",
                         fontWeight: "900",
                         borderColor: "purple.500", 
                         borderWidth: "5px",
                     }}
                 >
-                    PUSH
+                    <Icon 
+                        as={TiArrowDownThick} 
+                        fontSize="3.5rem" 
+                        className="animate__animated animate__delay-5s animate__flip"
+                    />
                 </Button>
             </Box>
         </Flex>

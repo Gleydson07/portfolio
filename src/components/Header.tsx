@@ -28,15 +28,17 @@ export function Header(){
                     <Text
                         mt="auto"
                         fontSize="3xl"
-                        color="gray.100"
+                        color="gray.500"
                         fontWeight="700"
+                        className="animate__animated animate__zoomInDown"
                     >
-                        {/* &lt;&nbsp; */}
+                        &lt;&nbsp;
                     </Text>
                     <Text
                         fontSize="4xl"
                         color="purple.400"
                         fontWeight="700"
+                        className="animate__animated animate__slow animate__zoomInDown"
                     >
                         g
                     </Text>
@@ -44,6 +46,7 @@ export function Header(){
                         fontSize="4xl"
                         color="purple.400"
                         fontWeight="300"
+                        className="animate__animated animate__slow animate__zoomInDown"
                     >
                         santos
                     </Text>
@@ -51,6 +54,7 @@ export function Header(){
                         fontSize="4xl"
                         color="purple.500"
                         fontWeight="700"
+                        className="animate__animated animate__slow animate__zoomInDown"
                     >
                         .
                     </Text>
@@ -58,16 +62,18 @@ export function Header(){
                         fontSize="4xl"
                         color="cyan.500"
                         fontWeight="700"
+                        className="animate__animated animate__slow animate__zoomInDown"
                     >
                         dev
                     </Text>
                     <Text
                         mt="auto"
                         fontSize="3xl"
-                        color="gray.100"
+                        color="gray.500"
                         fontWeight="700"
+                        className="animate__animated animate__zoomInDown"
                     >
-                        {/* &nbsp;/&gt; */}
+                        &nbsp;/&gt;
                     </Text>
 
                 </Flex>
