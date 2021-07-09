@@ -4,16 +4,16 @@ import { Flex, Text, Image, Box, Divider, Grid, Progress, GridItem, Button, Icon
 import VisibilitySensor from "react-visibility-sensor";
 import Typed from 'react-typed';
 
-import meImg from './images/g1.png'
-import reactImg from './images/reactjs.png'
-import cssImg from './images/css-3.png'
-import htmlImg from './images/html-5.png'
-import javascriptImg from './images/javascript.png'
-import nodeImg from './images/nodejs.png'
-import vscodeImg from './images/vscode.png'
-import gitImg from './images/git.png'
-import nextImg from './images/nextjs.png'
-import figmaImg from './images/figma.png'
+import meImg from './images/me/g1.png'
+import reactImg from './images/technologies/reactjs.png'
+import cssImg from './images/technologies/css-3.png'
+import htmlImg from './images/technologies/html-5.png'
+import javascriptImg from './images/technologies/javascript.png'
+import nodeImg from './images/technologies/nodejs.png'
+import vscodeImg from './images/technologies/vscode.png'
+import gitImg from './images/technologies/git.png'
+import nextImg from './images/technologies/nextjs.png'
+import figmaImg from './images/technologies/figma.png'
 import {TiArrowDownThick, TiArrowUpThick} from 'react-icons/ti'
 
 export function About(){

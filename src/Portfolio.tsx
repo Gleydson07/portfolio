@@ -48,14 +48,28 @@ export function PortFolio(){
                         </VisibilitySensor>
                     </Text>
 
-                    <Flex>
-                        <Carousel>
+                    <Flex 
+                        overflow="hidden"
+                        justifyContent="center"
+                        alignItems="center"
+                        flexDir="column"
+                    >
+                        <Carousel
+                            width="1100px"
+                            showThumbs={false}
+                            showArrows={true}
+                            showStatus={false}
+                            useKeyboardArrows={true}
+                            autoPlay={true}
+                            swipeable={true}
+                            emulateTouch={true}
+                            dynamicHeight={true}
+                        >
                             <Card/>
                             <Card/>
                             <Card/>
                         </Carousel>
-                    </Flex>
-                    
+                    </Flex>                    
                 </Flex>            
             </Flex>
     )
