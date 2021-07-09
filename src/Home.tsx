@@ -1,7 +1,7 @@
 import { Flex, Text, Box, Button, Image, Icon } from '@chakra-ui/react';
 
 import {TiArrowDownThick} from 'react-icons/ti'
-import IImg from './images/g1.png'
+import IImg from './images/me.jpg'
 import Typed from 'react-typed';
 
 export function Home(){

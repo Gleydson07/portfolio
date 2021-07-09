@@ -1,7 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Flex, Text, Image, Box, Divider, Grid, Link, Icon, Progress, GridItem } from '@chakra-ui/react';
-import Typed from 'react-typed';
+
 import VisibilitySensor from "react-visibility-sensor";
+import Typed from 'react-typed';
+
+import meImg from './images/g1.png'
 import reactImg from './images/reactjs.png'
 import cssImg from './images/css-3.png'
 import htmlImg from './images/html-5.png'
@@ -72,8 +75,7 @@ export function About(){
                     >
                         <Flex>
                             <Image 
-                                src="https://avatars.githubusercontent.com/u/17955465?v=4"
-                                w="6rem"
+                                src={meImg}
                                 h="6rem"
                                 borderRadius="0.5rem"
                                 border="4px solid #0BC5EA"
