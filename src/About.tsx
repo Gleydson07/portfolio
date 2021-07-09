@@ -273,28 +273,26 @@ export function About(){
                                         </Box>          
                                     </GridItem>
 
-                                    {isWideVersion && 
-                                        <GridItem 
-                                            colSpan={2}
-                                            align="center"
-                                            my="auto"
-                                            mt={["1rem", "0rem"]}
-                                        >
-                                            <Text color="purple.400" fontSize="md" fontWeight="500">Tecnologias e Frameworks</Text>
-                                            <Grid templateColumns="repeat(10, 1fr)" mt="1rem" b="1rem">
-                                                <Image src={javascriptImg} alt="javascript" h="36px"/>
-                                                <Image src={htmlImg} alt="html" h="36px"/>
-                                                <Image src={cssImg} alt="CSS" h="36px"/>
-                                                <Image src={reactImg} alt="react" h="36px"/>
-                                                <Image src={nextImg} alt="next" h="36px"/>
-                                                <Image src={typescriptImg} alt="typescript" h="36px"/>
-                                                <Image src={nodeImg} alt="node" h="36px"/>
-                                                <Image src={vscodeImg} alt="vscode" h="36px"/>
-                                                <Image src={gitImg} alt="git" h="36px"/>
-                                                <Image src={figmaImg} alt="figma" h="36px"/>
-                                            </Grid>
-                                        </GridItem>
-                                    }
+                                    <GridItem 
+                                        colSpan={2}
+                                        align="center"
+                                        my="auto"
+                                        mt={["1rem", "0rem"]}
+                                    >
+                                        <Text color="purple.400" fontSize="md" fontWeight="500">Tecnologias e Frameworks</Text>
+                                        <Grid templateColumns="repeat(10, 1fr)" mt="1rem" b="1rem">
+                                            <Image src={javascriptImg} alt="javascript" h="36px"/>
+                                            <Image src={htmlImg} alt="html" h="36px"/>
+                                            <Image src={cssImg} alt="CSS" h="36px"/>
+                                            <Image src={reactImg} alt="react" h="36px"/>
+                                            <Image src={nextImg} alt="next" h="36px"/>
+                                            <Image src={typescriptImg} alt="typescript" h="36px"/>
+                                            <Image src={nodeImg} alt="node" h="36px"/>
+                                            <Image src={vscodeImg} alt="vscode" h="36px"/>
+                                            <Image src={gitImg} alt="git" h="36px"/>
+                                            <Image src={figmaImg} alt="figma" h="36px"/>
+                                        </Grid>
+                                    </GridItem>
                                 </Grid>
                             </Flex>
                         </Flex>
