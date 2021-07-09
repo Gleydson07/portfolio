@@ -26,6 +26,7 @@ export function Home(){
                 justify="space-between"
                 w={["100%", "1100px"]}
                 mx="auto"
+                mt={["0rem", "5rem"]}
                 py="2rem"
             >
                 <Box
@@ -65,7 +66,7 @@ export function Home(){
                         fontSize={["lg", "3xl"]}
                         fontWeight="300"
                         textAlign="left"
-                        as="span"
+                        as={isWideVersion ? "span" : "p"}
                     >
                         Meu nome é&nbsp; 
                     </Text>
@@ -191,7 +192,7 @@ export function Home(){
             <Button 
                 as="a"
                 href="#about"
-                mt="1.5rem"
+                mt={["1.25rem", "2.5rem"]}
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
                 height={["3rem", "5rem"]}
                 width={["3rem", "5rem"]}
