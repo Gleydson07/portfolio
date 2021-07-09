@@ -7,6 +7,7 @@ import Typed from 'react-typed';
 export function Home(){
     return (
         <Flex
+            id="home"
             h="100vh"
             minHeight="600px"
             flexDir="column"
@@ -125,7 +126,9 @@ export function Home(){
                 </Box>
             </Flex>       
                 
-            <Button      
+            <Button 
+                as="a" 
+                href="#about"    
                 bottom="3rem"              
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
                 height="5rem"

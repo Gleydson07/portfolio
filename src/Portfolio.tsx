@@ -1,8 +1,13 @@
-import { Flex, Text, Icon, Link } from '@chakra-ui/react'
-import { Card } from './components/Card/Index';
-import Typed from 'react-typed';
 import { useEffect, useState } from 'react';
+import { Flex, Text } from '@chakra-ui/react'
+
+import Typed from 'react-typed';
 import VisibilitySensor from "react-visibility-sensor";
+
+import { Carousel } from 'react-responsive-carousel';
+import 'react-vertical-timeline-component/style.min.css';
+import "react-responsive-carousel/lib/styles/carousel.min.css";
+import { Card } from './components/Card';
 
 export function PortFolio(){
     const [isVisible, setIsVisible] = useState(false);
@@ -16,7 +21,9 @@ export function PortFolio(){
 
     return (
             <Flex
+                id="portfolio"
                 w="100%"
+                h="100vh"
                 flexDir="column"
                 alignItems="center"
                 justifyContent="center"
@@ -24,7 +31,7 @@ export function PortFolio(){
                 <Flex
                     w="1100px"
                     flexDir="column"
-                    mt="5rem"
+                    alignSelf="center"
                 >
                     <Text 
                         fontSize="3xl" 
@@ -40,12 +47,15 @@ export function PortFolio(){
                             />
                         </VisibilitySensor>
                     </Text>
-              
-                    <Card />
-                    <Card />
-                    <Card />
-                    <Card />
 
+                    <Flex>
+                        <Carousel>
+                            <Card/>
+                            <Card/>
+                            <Card/>
+                        </Carousel>
+                    </Flex>
+                    
                 </Flex>            
             </Flex>
     )

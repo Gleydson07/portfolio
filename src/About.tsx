@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Flex, Text, Image, Box, Divider, Grid, Link, Icon, Progress, GridItem } from '@chakra-ui/react';
+import { Flex, Text, Image, Box, Divider, Grid, Progress, GridItem, Button, Icon } from '@chakra-ui/react';
 
 import VisibilitySensor from "react-visibility-sensor";
 import Typed from 'react-typed';
@@ -14,7 +14,7 @@ import vscodeImg from './images/vscode.png'
 import gitImg from './images/git.png'
 import nextImg from './images/nextjs.png'
 import figmaImg from './images/figma.png'
-import { SiLinkedin, SiGithub, SiWhatsapp, SiGmail } from 'react-icons/si'
+import {TiArrowDownThick, TiArrowUpThick} from 'react-icons/ti'
 
 export function About(){
     const [isVisible, setIsVisible] = useState(false);
@@ -37,6 +37,7 @@ export function About(){
 
     return (
             <Flex
+                id="about"
                 h="100vh"
                 flexDir="column"
                 alignItems="center"
@@ -46,7 +47,7 @@ export function About(){
                     w="1100px"
                     h="100%"
                     flexDir="column"
-                    mt="5rem"
+                    mt="4rem"
                 >
                     <Text 
                         fontSize="3xl" 
@@ -65,7 +66,7 @@ export function About(){
                     </Text>
               
                     <Flex
-                        h="85%"
+                        h="650px"
                         w="100%"
                         bg="dark.50"
                         py="2rem"
@@ -95,40 +96,18 @@ export function About(){
                             <Divider mx="2rem" h="100%" orientation="vertical" colorScheme="cyan"/>
                             <Flex
                                 flexDir="column"
-                                justifyContent="space-around"
                             >
                                 <Box >
                                     <Text fontSize="md">e-mail: gassantos.dev@gmail.com</Text>
                                     <Text fontSize="md">fone: (82) 98111-4246</Text>
                                 </Box>
-
-                                <Grid 
-                                    display="flex"
-                                    gap="6"
-                                >
-                                    <Link href="https://www.linkedin.com/in/gleydson07/" isExternal >
-                                        <Icon as={SiLinkedin} fontSize="24"/>
-                                    </Link>
-
-                                    <Link href="https://github.com/Gleydson07" isExternal >
-                                        <Icon as={SiGithub} fontSize="24"/>
-                                    </Link>
-
-                                    <Link href="https://api.whatsapp.com/send?phone=558281114246&text=Ol%C3%A1!!%20%F0%9F%98%80" isExternal >
-                                        <Icon as={SiWhatsapp} fontSize="24"/>
-                                    </Link>
-
-                                    <Link href="https://mail.google.com/mail/u/0/?fs=1&to=gassantos.dev@gmail.com&su=Ol%C3%A1!%20fala%20aqui%20qual%20assunto%20legal%20que%20vamos%20tratar.&body=Aqui%20voc%C3%AA%20pode%20descrever%20melhor%20sua%20mensagem,%20pode%20ser%20uma%20pergunta,%20uma%20sugest%C3%A3o,%20um%20convite%20para%20um%20caf%C3%A9%20%F0%9F%98%80&tf=cm" isExternal >
-                                        <Icon as={SiGmail} fontSize="24"/>
-                                    </Link>
-                                </Grid>
                             </Flex>
                         </Flex>
 
                         <Flex
                             w="100%"
                             h="100%"
-                            mt="3rem"
+                            mt="2.5rem"
                         >
                             <Flex
                                 flex="1"
@@ -173,15 +152,14 @@ export function About(){
                                         <Text color="gray.400">NodeJS</Text>
                                         <Progress mt="0.25rem" size="sm" colorScheme="purple" value={40}/>
                                     </Box>
-                                    <Box mt="1rem">
+                                    {/* <Box mt="1rem">
                                         <Text color="gray.400">React Native</Text>
                                         <Progress mt="0.25rem" size="sm" colorScheme="purple" value={25}/>
                                     </Box>
                                     <Box mt="1rem">
                                         <Text color="gray.400">Inglês</Text>
                                         <Progress mt="0.25rem" size="sm" colorScheme="purple" value={15}/>
-                                    </Box>
-                                    
+                                    </Box>                                     */}
                                 </Box>
                             </Flex>
 
@@ -309,6 +287,53 @@ export function About(){
                         
                     </Flex>
                 </Flex>            
+                
+                <Grid gap="2rem" templateColumns="repeat(2, 1fr)">
+                    <Button
+                        as="a"
+                        href="#portfolio"      
+                        bottom="2rem"
+                        height="5rem"
+                        width="5rem"
+                        color="purple.500"
+                        bg="transparent"
+                        fontSize="1.125rem"
+                        fontWeight="700"
+                        transition="all 0.3s"
+                        _hover={{
+                            color: "cyan.400", 
+                            fontSize: "3rem",
+                            fontWeight: "900",
+                        }}
+                    >
+                        <Icon 
+                            as={TiArrowDownThick} 
+                            fontSize="3.5rem" 
+                        />
+                    </Button>
+                    <Button
+                        as="a"
+                        href="#home"      
+                        bottom="2rem"
+                        height="5rem"
+                        width="5rem"
+                        color="purple.500"
+                        bg="transparent"
+                        fontSize="1.125rem"
+                        fontWeight="700"
+                        transition="all 0.3s"
+                        _hover={{
+                            color: "cyan.400", 
+                            fontSize: "3rem",
+                            fontWeight: "900"
+                        }}
+                    >
+                        <Icon 
+                            as={TiArrowUpThick} 
+                            fontSize="3.5rem" 
+                        />
+                    </Button>
+                </Grid>
             </Flex>
     )
 }
