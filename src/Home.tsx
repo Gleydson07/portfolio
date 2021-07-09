@@ -193,7 +193,8 @@ export function Home(){
             <Button 
                 as="a" 
                 href="#about"
-                bottom="3rem"
+                // bottom="3rem"
+                mb="3rem"
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
                 height={["3rem", "5rem"]}
                 width={["3rem", "5rem"]}
