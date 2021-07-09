@@ -128,7 +128,7 @@ export function Home(){
                 
             <Button 
                 as="a" 
-                href="#about"    
+                href="#about"
                 bottom="3rem"              
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
                 height="5rem"
