@@ -14,7 +14,7 @@ import 'animate.css';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      {/* <Header/> */}
+      <Header/>
       <Home/>
       {/* <About /> */}
       {/* <PortFolio /> */}

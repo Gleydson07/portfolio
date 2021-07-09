@@ -3,6 +3,7 @@ import { SiLinkedin, SiGithub, SiWhatsapp, SiGmail } from 'react-icons/si'
 
 import {TiArrowDownThick} from 'react-icons/ti'
 import IImg from './images/me/me.jpg'
+import meMobileImg from './images/me/me-mobile.jpeg'
 import Typed from 'react-typed';
 
 export function Home(){
@@ -14,11 +15,11 @@ export function Home(){
     return (
         <Flex
             id="home"
-            h="100vh"
+            h={["90vh", "100vh"]}
             flexDir="column"
             align="center"
             justifyContent="center"
-            px="3rem"
+            px="2rem"
         >
             <Flex
                 align="center"
@@ -30,40 +31,43 @@ export function Home(){
             >
                 <Box
                     h="100%"
-                    width={["450px" ,"700px"]}
+                    width={["100%" ,"700px"]}
                     position="relative"
                 >
                     
 
                     {!isWideVersion &&
-                    <Flex
-                        w="80px"
-                        my="1rem"    
+                        <Flex
+                            w="100%"
+                            my="1rem" 
+                            mx="auto"
+                        >
+                            <Image 
+                                className="animate__animated animate__slower animate__fadeInDown"
+                                data-rellax-speed="7"
+                                border="2px solid"
+                                borderColor="purple.400"
+                                objectFit="cover"
+                                borderRadius="100%"
+                                src={meMobileImg} 
+                                alt="Gleydson"
+                                w="80px"
+                                h="80px"
+                            />
+                        </Flex>                
+                    }<Text
+                        bgGradient="linear(to-l, cyan.400,purple.500)"
+                        bgClip="text"
+                        fontSize={["2xl", "5xl"]}
+                        fontWeight="extrabold"
+                        textAlign="left" 
                     >
-                        <Image 
-                            className="animate__animated animate__slower animate__fadeInDown"
-                            data-rellax-speed="7"
-                            border="2px solid"
-                            // borderColor="cyan.400"
-                            objectFit="cover"
-                            borderRadius="0.25rem"
-                            src={IImg} 
-                            alt="hi"
-                        />
-                    </Flex>                
-                }<Text
-                bgGradient="linear(to-l, cyan.400,purple.500)"
-                bgClip="text"
-                fontSize={["2xl", "5xl"]}
-                fontWeight="extrabold"
-                textAlign="left" 
-            >
-                Seja bem vindo(a) !
-            </Text>
+                        Seja bem vindo(a) !
+                    </Text>
 
                     <Text
                         color="gray.200"
-                        fontSize={["xl", "3xl"]}
+                        fontSize={["lg", "3xl"]}
                         fontWeight="300"
                         textAlign="left"
                         as="span"
@@ -83,7 +87,7 @@ export function Home(){
                     
                     <Text
                         color="gray.200"
-                        fontSize={["xl", "3xl"]}
+                        fontSize={["md", "3xl"]}
                         fontWeight="300"
                         textAlign="left"
                         mt="1rem"
@@ -192,10 +196,10 @@ export function Home(){
             <Button 
                 as="a" 
                 href="#about"
-                bottom="3rem"              
+                bottom={["1.5rem", "3rem"]}
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
-                height="5rem"
-                width="5rem"
+                height={["3rem", "5rem"]}
+                width={["3rem", "5rem"]}
                 borderRadius="50%"
                 color="purple.500"
                 border="10px solid #0BC5EA77"
@@ -213,7 +217,7 @@ export function Home(){
             >
                 <Icon 
                     as={TiArrowDownThick} 
-                    fontSize="3.5rem" 
+                    fontSize={["1.5rem", "3.5rem"]} 
                     className="animate__animated animate__delay-5s animate__flip"
                 />
             </Button>
