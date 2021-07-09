@@ -46,7 +46,6 @@ export function Home(){
                                 className="animate__animated animate__slower animate__fadeInDown"
                                 data-rellax-speed="7"
                                 border="2px solid"
-                                borderColor="purple.400"
                                 objectFit="cover"
                                 borderRadius="100%"
                                 src={meMobileImg} 
@@ -94,7 +93,7 @@ export function Home(){
                     >
                         <>
                             <Typed
-                                strings={['Sou estudante.', `Sou desenvolvedor frontend.`, `Sou estudante e desenvolvedor${!isWideVersion ? '<br/>' : ''} frontend.`]}
+                                strings={['Sou estudante.', `Sou desenvolvedor frontend.`, `Sou estudante e desenvolvedor frontend.`]}
                                 typeSpeed={50}
                                 backSpeed={50}
                                 showCursor={true}

@@ -16,7 +16,7 @@ function App() {
     <ChakraProvider theme={theme}>
       <Header/>
       <Home/>
-      {/* <About /> */}
+      <About />
       {/* <PortFolio /> */}
       <Particles
         options={{

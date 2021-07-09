@@ -9,6 +9,7 @@ import reactImg from './images/technologies/reactjs.png'
 import cssImg from './images/technologies/css-3.png'
 import htmlImg from './images/technologies/html-5.png'
 import javascriptImg from './images/technologies/javascript.png'
+import typescriptImg from './images/technologies/typescript.png'
 import nodeImg from './images/technologies/nodejs.png'
 import vscodeImg from './images/technologies/vscode.png'
 import gitImg from './images/technologies/git.png'
@@ -133,8 +134,12 @@ export function About(){
                                         <Progress mt="0.25rem" size="sm" colorScheme="purple" value={90}/>
                                     </Box>
                                     <Box mt="1rem">
+                                        <Text color="gray.400">Typescript</Text>
+                                        <Progress mt="0.25rem" size="sm" colorScheme="purple" value={88}/>
+                                    </Box>
+                                    <Box mt="1rem">
                                         <Text color="gray.400">JavaScript</Text>
-                                        <Progress mt="0.25rem" size="sm" colorScheme="purple" value={85}/>
+                                        <Progress mt="0.25rem" size="sm" colorScheme="purple" value={80}/>
                                     </Box>
                                     <Box mt="1rem">
                                         <Text color="gray.400">ReactJS</Text>
@@ -269,16 +274,17 @@ export function About(){
                                         my="auto"
                                     >
                                         <Text color="purple.400" fontSize="md" fontWeight="500">Tecnologias e Frameworks</Text>
-                                        <Grid templateColumns="repeat(9, 1fr)" mt="1rem" b="1rem">
-                                            <Image src={javascriptImg} alt="CSS" h="36px"/>
-                                            <Image src={htmlImg} alt="CSS" h="36px"/>
+                                        <Grid templateColumns="repeat(10, 1fr)" mt="1rem" b="1rem">
+                                            <Image src={javascriptImg} alt="javascript" h="36px"/>
+                                            <Image src={htmlImg} alt="html" h="36px"/>
                                             <Image src={cssImg} alt="CSS" h="36px"/>
-                                            <Image src={reactImg} alt="CSS" h="36px"/>
-                                            <Image src={nextImg} alt="CSS" h="36px"/>
-                                            <Image src={nodeImg} alt="CSS" h="36px"/>
-                                            <Image src={vscodeImg} alt="CSS" h="36px"/>
-                                            <Image src={gitImg} alt="CSS" h="36px"/>
-                                            <Image src={figmaImg} alt="CSS" h="36px"/>
+                                            <Image src={reactImg} alt="react" h="36px"/>
+                                            <Image src={nextImg} alt="next" h="36px"/>
+                                            <Image src={typescriptImg} alt="typescript" h="36px"/>
+                                            <Image src={nodeImg} alt="node" h="36px"/>
+                                            <Image src={vscodeImg} alt="vscode" h="36px"/>
+                                            <Image src={gitImg} alt="git" h="36px"/>
+                                            <Image src={figmaImg} alt="figma" h="36px"/>
                                         </Grid>
                                     </GridItem>
                                 </Grid>
