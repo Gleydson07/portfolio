@@ -72,7 +72,7 @@ export function About(){
               
                     <Flex
                         w="100%"
-                        bg="dark.50"
+                        bg={["dark.100", "dark.50"]}
                         py="2rem"
                         px={["1.5rem" ,"3rem"]}
                         borderRadius="0.5rem"
@@ -189,10 +189,10 @@ export function About(){
                                 <Grid
                                     templateColumns="repeat(2, 1fr)"
                                     bg={["transparent" ,"dark.100"]}
-                                    mt="1rem"
+                                    mt={["0", "1rem"]}
                                     h="100%"
                                     borderRadius="0.5rem"
-                                    py="1rem"
+                                    pt="1rem"
                                     px={["0rem", "2rem"]}
                                 >
                                     <GridItem colSpan={!isWideVersion ? 2 : 1}>
@@ -273,26 +273,28 @@ export function About(){
                                         </Box>          
                                     </GridItem>
 
-                                    <GridItem 
-                                        colSpan={2}
-                                        align="center"
-                                        my="auto"
-                                        mt={["1rem", "0rem"]}
-                                    >
-                                        <Text color="purple.400" fontSize="md" fontWeight="500">Tecnologias e Frameworks</Text>
-                                        <Grid templateColumns="repeat(10, 1fr)" mt="1rem" b="1rem">
-                                            <Image src={javascriptImg} alt="javascript" h="36px"/>
-                                            <Image src={htmlImg} alt="html" h="36px"/>
-                                            <Image src={cssImg} alt="CSS" h="36px"/>
-                                            <Image src={reactImg} alt="react" h="36px"/>
-                                            <Image src={nextImg} alt="next" h="36px"/>
-                                            <Image src={typescriptImg} alt="typescript" h="36px"/>
-                                            <Image src={nodeImg} alt="node" h="36px"/>
-                                            <Image src={vscodeImg} alt="vscode" h="36px"/>
-                                            <Image src={gitImg} alt="git" h="36px"/>
-                                            <Image src={figmaImg} alt="figma" h="36px"/>
-                                        </Grid>
-                                    </GridItem>
+                                    {isWideVersion && 
+                                        <GridItem 
+                                            colSpan={2}
+                                            align="center"
+                                            my="auto"
+                                            mt={["1rem", "0rem"]}
+                                        >
+                                            <Text color="purple.400" fontSize="md" fontWeight="500">Tecnologias e Frameworks</Text>
+                                            <Grid templateColumns="repeat(10, 1fr)" mt="1rem" b="1rem">
+                                                <Image src={javascriptImg} alt="javascript" h="36px"/>
+                                                <Image src={htmlImg} alt="html" h="36px"/>
+                                                <Image src={cssImg} alt="CSS" h="36px"/>
+                                                <Image src={reactImg} alt="react" h="36px"/>
+                                                <Image src={nextImg} alt="next" h="36px"/>
+                                                <Image src={typescriptImg} alt="typescript" h="36px"/>
+                                                <Image src={nodeImg} alt="node" h="36px"/>
+                                                <Image src={vscodeImg} alt="vscode" h="36px"/>
+                                                <Image src={gitImg} alt="git" h="36px"/>
+                                                <Image src={figmaImg} alt="figma" h="36px"/>
+                                            </Grid>
+                                        </GridItem>
+                                    }
                                 </Grid>
                             </Flex>
                         </Flex>

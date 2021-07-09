@@ -15,7 +15,7 @@ export function Home(){
     return (
         <Flex
             id="home"
-            h="100vh"
+            minH="100vh"
             flexDir="column"
             align="center"
             justifyContent="center"
@@ -193,7 +193,7 @@ export function Home(){
             <Button 
                 as="a" 
                 href="#about"
-                bottom={["1.5rem", "3rem"]}
+                bottom="3rem"
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
                 height={["3rem", "5rem"]}
                 width={["3rem", "5rem"]}
