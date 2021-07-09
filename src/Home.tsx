@@ -15,10 +15,8 @@ export function Home(){
     return (
         <Flex
             id="home"
-            minH="100vh"
             flexDir="column"
             align="center"
-            justifyContent="center"
             px="2rem"
         >
             <Flex
@@ -194,7 +192,7 @@ export function Home(){
                 as="a" 
                 href="#about"
                 // bottom="3rem"
-                mb="3rem"
+                my="3rem"
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
                 height={["3rem", "5rem"]}
                 width={["3rem", "5rem"]}
