@@ -36,8 +36,7 @@ export function Home(){
                     {!isWideVersion &&
                         <Flex
                             w="100%"
-                            my="1rem" 
-                            mx="auto"
+                            mb="1rem"
                         >
                             <Image 
                                 className="animate__animated animate__slower animate__fadeInDown"

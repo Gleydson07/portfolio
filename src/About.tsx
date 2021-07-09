@@ -43,6 +43,7 @@ export function About(){
     return (
             <Flex
                 id="about"
+                h={["100%", "100vh"]}
                 flexDir="column"
                 alignItems="center"
                 justifyContent="center"
@@ -50,9 +51,8 @@ export function About(){
             >            
                 <Flex
                     w={["100%", "1100px"]}
-                    h="100%"
                     flexDir="column"
-                    mt="4rem"
+                    mt={["3rem", "5rem"]}
                 >
                     <Text 
                         fontSize={["xl" ,"3xl"]}
@@ -99,6 +99,7 @@ export function About(){
                                 </Flex>
 
                                 <Divider mx="2rem" h="100%" orientation="vertical" colorScheme="cyan"/>
+                                
                                 <Flex
                                     flexDir="column"
                                 >
