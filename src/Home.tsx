@@ -15,7 +15,7 @@ export function Home(){
     return (
         <Flex
             id="home"
-            h={["90vh", "100vh"]}
+            h="100vh"
             flexDir="column"
             align="center"
             justifyContent="center"
@@ -34,8 +34,6 @@ export function Home(){
                     width={["100%" ,"700px"]}
                     position="relative"
                 >
-                    
-
                     {!isWideVersion &&
                         <Flex
                             w="100%"

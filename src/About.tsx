@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Flex, Text, Image, Box, Divider, Grid, Progress, GridItem, Button, Icon } from '@chakra-ui/react';
+import { Flex, Text, Image, Box, Divider, Grid, Progress, GridItem, Button, Icon, useBreakpointValue } from '@chakra-ui/react';
 
 import VisibilitySensor from "react-visibility-sensor";
 import Typed from 'react-typed';
@@ -21,7 +21,11 @@ export function About(){
     const [isVisible, setIsVisible] = useState(false);
     const [value, setValue] = useState("");
     const [showAnimation, setShowAnimation] = useState(false);    
-    const [myAge, setMyAge] = useState<number>();
+    const [myAge, setMyAge] = useState<number>();    
+    const isWideVersion = useBreakpointValue({
+        base: false,
+        lg: true
+    })
 
    useEffect(() => {
        const now = new Date();
@@ -39,19 +43,19 @@ export function About(){
     return (
             <Flex
                 id="about"
-                h="100vh"
                 flexDir="column"
                 alignItems="center"
                 justifyContent="center"
+                px="2rem"
             >            
                 <Flex
-                    w="1100px"
+                    w={["100%", "1100px"]}
                     h="100%"
                     flexDir="column"
                     mt="4rem"
                 >
                     <Text 
-                        fontSize="3xl" 
+                        fontSize={["xl" ,"3xl"]}
                         fontWeight="600"
                         my="1rem"
                         id="title"
@@ -67,48 +71,48 @@ export function About(){
                     </Text>
               
                     <Flex
-                        h="650px"
                         w="100%"
                         bg="dark.50"
                         py="2rem"
-                        px="3rem"
+                        px={["1.5rem" ,"3rem"]}
                         borderRadius="0.5rem"
                         flexDir="column"
                     >
-                        <Flex>
-                            <Image 
-                                src={meImg}
-                                h="6rem"
-                                borderRadius="0.5rem"
-                                border="4px solid #0BC5EA"
-                            />
+                        {isWideVersion && 
+                            <Flex>
+                                <Image 
+                                    src={meImg}
+                                    h="6rem"
+                                    borderRadius="0.5rem"
+                                    border="4px solid #0BC5EA"
+                                />
 
-                            <Flex
-                                align="left"
-                                ml="2rem"
-                                flexDir="column"
-                                justifyContent='space-around'
-                            >
-                                <Text as="span" fontWeight="500" fontSize="2xl">Gleydson Albuquerque da Silva Santos</Text>
-                                <Text fontSize="lg">Viçosa-AL, BRASIL</Text>
-                                <Text as="span" fontSize="sm">{myAge} anos</Text>
-                            </Flex>
+                                <Flex
+                                    align="left"
+                                    ml="2rem"
+                                    flexDir="column"
+                                    justifyContent='space-around'
+                                >
+                                    <Text as="span" fontWeight="500" fontSize="2xl">Gleydson Albuquerque da Silva Santos</Text>
+                                    <Text fontSize="lg">Viçosa-AL, BRASIL</Text>
+                                    <Text as="span" fontSize="sm">{myAge} anos</Text>
+                                </Flex>
 
-                            <Divider mx="2rem" h="100%" orientation="vertical" colorScheme="cyan"/>
-                            <Flex
-                                flexDir="column"
-                            >
-                                <Box >
-                                    <Text fontSize="md">e-mail: gassantos.dev@gmail.com</Text>
-                                    <Text fontSize="md">fone: (82) 98111-4246</Text>
-                                </Box>
+                                <Divider mx="2rem" h="100%" orientation="vertical" colorScheme="cyan"/>
+                                <Flex
+                                    flexDir="column"
+                                >
+                                    <Box >
+                                        <Text fontSize="md">e-mail: gassantos.dev@gmail.com</Text>
+                                        <Text fontSize="md">fone: (82) 98111-4246</Text>
+                                    </Box>
+                                </Flex>
                             </Flex>
-                        </Flex>
+                        }
 
                         <Flex
-                            w="100%"
-                            h="100%"
-                            mt="2.5rem"
+                            mt={["0rem", "2.5rem"]}
+                            flexDir={["column-reverse", "row"]}
                         >
                             <Flex
                                 flex="1"
@@ -118,13 +122,14 @@ export function About(){
                             >
                                 <Text
                                     color="cyan.400"
-                                    fontSize="2xl"
+                                    fontSize={["lg" ,"2xl"]}
                                     fontWeight="600"
+                                    mt={["1rem", "0rem"]}
                                 >
                                     Skills
                                 </Text>
 
-                                <Box mr="3rem">
+                                <Box mr={["0rem", "3rem"]}>
                                     <Box mt="1rem">
                                         <Text color="gray.400">HTML</Text>
                                         <Progress mt="0.25rem" size="sm" colorScheme="purple" value={90}/>
@@ -176,21 +181,21 @@ export function About(){
                             >
                                 <Text 
                                     color="cyan.400"
-                                    fontSize="2xl"
+                                    fontSize={["lg" ,"2xl"]}
                                     fontWeight="600"
                                 >
                                     Dados Profissionais e Acadêmicos
                                 </Text>
                                 <Grid
                                     templateColumns="repeat(2, 1fr)"
-                                    bg="dark.100"
+                                    bg={["transparent" ,"dark.100"]}
                                     mt="1rem"
                                     h="100%"
                                     borderRadius="0.5rem"
                                     py="1rem"
-                                    px="2rem"
+                                    px={["0rem", "2rem"]}
                                 >
-                                    <GridItem>
+                                    <GridItem colSpan={!isWideVersion ? 2 : 1}>
                                         <Box>
                                             <Text color="purple.400" fontSize="md" fontWeight="500">Experiências Profissionais</Text>
                                             <Box lineHeight="1.25rem">
@@ -199,8 +204,8 @@ export function About(){
                                                     alignItems="center"
                                                     color="gray.400"                                      
                                                 >
-                                                    <Text fontSize="xs" color="gray.400" > Sua empresa aqui 🥰</Text>
-                                                    <Text fontSize="sm" mx="0.5rem" color="gray.400" > - Forever</Text>
+                                                    <Text fontSize="xs" color="gray.400" > Sua empresa aqui</Text>
+                                                    <Text fontSize="sm" mx="0.5rem" color="gray.400" >🥰 - Forever</Text>
                                                 </Flex>
                                             </Box>
                                         </Box>
@@ -219,7 +224,7 @@ export function About(){
                                         </Box>
                                     </GridItem>
 
-                                    <GridItem>
+                                    <GridItem colSpan={!isWideVersion ? 2 : 1} mt={["1rem", "0rem"]}>
                                         <Box>
                                             <Text color="purple.400" fontSize="md" fontWeight="500">Cursos</Text>
                                             <Box >
@@ -272,6 +277,7 @@ export function About(){
                                         colSpan={2}
                                         align="center"
                                         my="auto"
+                                        mt={["1rem", "0rem"]}
                                     >
                                         <Text color="purple.400" fontSize="md" fontWeight="500">Tecnologias e Frameworks</Text>
                                         <Grid templateColumns="repeat(10, 1fr)" mt="1rem" b="1rem">
@@ -298,9 +304,9 @@ export function About(){
                     <Button
                         as="a"
                         href="#portfolio"      
-                        bottom="2rem"
-                        height="5rem"
-                        width="5rem"
+                        my="1rem"
+                        height={["3rem", "5rem"]}
+                        width={["3rem", "5rem"]}
                         color="purple.500"
                         bg="transparent"
                         fontSize="1.125rem"
@@ -320,9 +326,9 @@ export function About(){
                     <Button
                         as="a"
                         href="#home"      
-                        bottom="2rem"
-                        height="5rem"
-                        width="5rem"
+                        my="1rem"
+                        height={["3rem", "5rem"]}
+                        width={["3rem", "5rem"]}
                         color="purple.500"
                         bg="transparent"
                         fontSize="1.125rem"
