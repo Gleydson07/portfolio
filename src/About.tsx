@@ -308,13 +308,13 @@ export function About(){
                         my="1rem"
                         height={["3rem", "5rem"]}
                         width={["3rem", "5rem"]}
-                        color="purple.500"
+                        color="gray.700"
                         bg="transparent"
                         fontSize="1.125rem"
                         fontWeight="700"
                         transition="all 0.3s"
                         _hover={{
-                            color: "cyan.400", 
+                            color: "cyan.700", 
                             fontSize: "3rem",
                             fontWeight: "900",
                         }}
@@ -330,13 +330,13 @@ export function About(){
                         my="1rem"
                         height={["3rem", "5rem"]}
                         width={["3rem", "5rem"]}
-                        color="purple.500"
+                        color="gray.700"
                         bg="transparent"
                         fontSize="1.125rem"
                         fontWeight="700"
                         transition="all 0.3s"
                         _hover={{
-                            color: "cyan.400", 
+                            color: "cyan.700", 
                             fontSize: "3rem",
                             fontWeight: "900"
                         }}

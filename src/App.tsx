@@ -17,7 +17,7 @@ function App() {
       <Header/>
       <Home/>
       <About />
-      {/* <PortFolio /> */}
+      <PortFolio />
       <Particles
         options={{
           backgroundMode: {

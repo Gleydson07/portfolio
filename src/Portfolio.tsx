@@ -1,13 +1,10 @@
 import { useEffect, useState } from 'react';
-import { Flex, Text } from '@chakra-ui/react'
+import { Flex, Grid, Text } from '@chakra-ui/react'
+
+import { Card } from './components/Card';
 
 import Typed from 'react-typed';
 import VisibilitySensor from "react-visibility-sensor";
-
-import { Carousel } from 'react-responsive-carousel';
-import 'react-vertical-timeline-component/style.min.css';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Card } from './components/Card';
 
 export function PortFolio(){
     const [isVisible, setIsVisible] = useState(false);
@@ -23,15 +20,13 @@ export function PortFolio(){
             <Flex
                 id="portfolio"
                 w="100%"
-                h="100vh"
                 flexDir="column"
                 alignItems="center"
-                justifyContent="center"
             >            
                 <Flex
                     w="1100px"
                     flexDir="column"
-                    alignSelf="center"
+                    mt="5rem"
                 >
                     <Text 
                         fontSize="3xl" 
@@ -48,28 +43,22 @@ export function PortFolio(){
                         </VisibilitySensor>
                     </Text>
 
-                    <Flex 
-                        overflow="hidden"
-                        justifyContent="center"
-                        alignItems="center"
-                        flexDir="column"
+                    <Grid 
+                        templateColumns="repeat(2, 1fr)"
+                        gap="2rem"
+                        w="100%"
+                        px="3rem"
+                        py="2rem"
+                        m="auto"
+                        bg="dark.100"
+                        borderRadius="0.5rem"
                     >
-                        <Carousel
-                            width="1100px"
-                            showThumbs={false}
-                            showArrows={true}
-                            showStatus={false}
-                            useKeyboardArrows={true}
-                            autoPlay={true}
-                            swipeable={true}
-                            emulateTouch={true}
-                            dynamicHeight={true}
-                        >
-                            <Card/>
-                            <Card/>
-                            <Card/>
-                        </Carousel>
-                    </Flex>                    
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                        <Card/>
+                    </Grid>                    
                 </Flex>            
             </Flex>
     )
