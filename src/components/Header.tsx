@@ -15,7 +15,7 @@ export function Header(){
             align="center"
             justify="center"
             bg="black"
-            zIndex="1"
+            zIndex="10"
         >
             <Flex
                 w="1440px"

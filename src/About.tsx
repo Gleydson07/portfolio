@@ -16,6 +16,7 @@ import gitImg from './images/technologies/git.png'
 import nextImg from './images/technologies/nextjs.png'
 import figmaImg from './images/technologies/figma.png'
 import {TiArrowDownThick, TiArrowUpThick} from 'react-icons/ti'
+import {AiOutlineMail, AiOutlinePhone} from 'react-icons/ai'
 
 export function About(){
     const [isVisible, setIsVisible] = useState(false);
@@ -50,9 +51,9 @@ export function About(){
                 px="2rem"
             >            
                 <Flex
-                    w={["100%", "1100px"]}
                     flexDir="column"
-                    mt={["3rem", "5rem"]}
+                    w={["100%", "1100px"]}
+                    mt={["3rem", "3rem"]}
                 >
                     <Text 
                         fontSize={["xl" ,"3xl"]}
@@ -74,7 +75,7 @@ export function About(){
                         w="100%"
                         bg={["dark.100", "dark.50"]}
                         py="2rem"
-                        px={["1.5rem" ,"3rem"]}
+                        px={["1.5rem" ,"5rem"]}
                         borderRadius="0.5rem"
                         flexDir="column"
                     >
@@ -82,7 +83,7 @@ export function About(){
                             <Flex>
                                 <Image 
                                     src={meImg}
-                                    h="6rem"
+                                    h="5rem"
                                     borderRadius="0.5rem"
                                     border="4px solid #0BC5EA"
                                 />
@@ -92,6 +93,7 @@ export function About(){
                                     ml="2rem"
                                     flexDir="column"
                                     justifyContent='space-around'
+                                    lineHeight="1.25rem"
                                 >
                                     <Text as="span" fontWeight="500" fontSize="2xl">Gleydson Albuquerque da Silva Santos</Text>
                                     <Text fontSize="lg">Viçosa-AL, BRASIL</Text>
@@ -100,12 +102,12 @@ export function About(){
 
                                 <Divider mx="2rem" h="100%" orientation="vertical" colorScheme="cyan"/>
                                 
-                                <Flex
-                                    flexDir="column"
-                                >
+                                <Flex flexDir="column">
                                     <Box >
-                                        <Text fontSize="md">e-mail: gassantos.dev@gmail.com</Text>
-                                        <Text fontSize="md">fone: (82) 98111-4246</Text>
+                                        <Icon as={AiOutlineMail}/>
+                                        <Text fontSize="md" as="span" ml="0.5rem"> gassantos.dev@gmail.com</Text><br/>
+                                        <Icon as={AiOutlinePhone}/>
+                                        <Text fontSize="md" as="span" ml="0.5rem"> (82) 98111-4246</Text>
                                     </Box>
                                 </Flex>
                             </Flex>
@@ -219,7 +221,7 @@ export function About(){
                                                     color="gray.400"                                      
                                                 >
                                                     <Text fontSize="xs" color="gray.400" > Centro Universitário CESMAC</Text>
-                                                    <Text fontSize="sm" mx="0.5rem" color="gray.400" > - 2014 - 2018</Text>
+                                                    <Text fontSize="sm" mx="0.5rem" color="gray.400" >- 03/2018</Text>
                                                 </Flex>
                                             </Box>
                                         </Box>
@@ -301,7 +303,8 @@ export function About(){
                     </Flex>
                 </Flex>            
                 
-                <Grid gap="2rem" templateColumns="repeat(2, 1fr)">
+                {isWideVersion && 
+                    <Grid gap="2rem" templateColumns="repeat(2, 1fr)">
                     <Button
                         as="a"
                         href="#portfolio"      
@@ -347,6 +350,7 @@ export function About(){
                         />
                     </Button>
                 </Grid>
+                }
             </Flex>
     )
 }
