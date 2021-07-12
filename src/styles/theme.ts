@@ -22,6 +22,9 @@ export const theme = extendTheme({
   styles: {
     global: {
       body: {
+        margin: 0,
+        padding: 0,
+        boxSizing: "border-box",
         bg: "gray.900",
         color: "gray.200",
       }

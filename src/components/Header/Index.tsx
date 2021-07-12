@@ -10,19 +10,18 @@ export function Header(){
     return (
         <Flex
             as="header"
-            w="100%"
             position="fixed"
-            align="center"
-            justify="center"
-            bg="black"
+            alignItems="center"
+            justifyContent='center'
+            w="100vw"
             zIndex="10"
+            bg="black"
         >
             <Flex
-                w={["100%", "1440px"]}
+                w={["100vh", "1440px"]}
                 justifyContent={["center" ,"space-between"]}
                 alignItems="center"
-                py="0.5rem"
-                px="1rem"
+                px="2rem"
             >
                 <Logo/>
 

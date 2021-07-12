@@ -19,7 +19,7 @@ export function WelcomeBox(){
         <Box
             maxW="600px"
             minW="260px"
-            w="500px"
+            w={["100%","500px"]}
             flex={isWideVersion ? 4 : ''}
             pr={["0rem", "2rem"]}
             mx={isWideVersion ? '' : 'auto'}

@@ -8,8 +8,6 @@ export function SocialMedia(){
             display="flex"
             templateColumns="repeat(4, 1fr)"
             gap="5"
-            alignItems="center"
-            justifyContent="center"
         >
             <GridItem>
                 <Link href="https://www.linkedin.com/in/gsantosdev/" isExternal >

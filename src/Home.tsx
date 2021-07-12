@@ -16,14 +16,14 @@ export function Home(){
             h="100vh"
             flexDir="column"
             justifyContent="center"
-            align="center"
+            alignItems="center"
             px="2rem"
         >
             <Flex
-                align="center"
-                w="100%"
                 justify="space-between"
+                alignItems="center"
                 maxW={["100%", "1100px"]}
+                w="100%"
             >
                 <WelcomeBox/>
 
