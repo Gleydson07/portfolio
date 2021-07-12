@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Box, Link, Icon } from '@chakra-ui/react'
+import { Flex, Text, Image, Box, Link, Icon, useBreakpointValue } from '@chakra-ui/react'
 import { Carousel } from 'react-responsive-carousel';
 
 import {SiGithub} from 'react-icons/si'
@@ -17,7 +17,12 @@ interface ICardProps {
 }
 
 export function Card({images, title, description, technology, repository, page}: ICardProps){
-    const [imageList, setImageList] = useState<ReactElement[]>()
+    const [imageList, setImageList] = useState<ReactElement[]>();    
+    const isWideVersion = useBreakpointValue({
+        base: false,
+        lg: true
+    })
+
     useEffect(() => {
         const data = images.map(img => (            
            <Image 
@@ -50,8 +55,8 @@ export function Card({images, title, description, technology, repository, page}:
                     showStatus={false}
                     useKeyboardArrows={true}
                     autoPlay={true}
-                    swipeable={true}
-                    emulateTouch={true}
+                    swipeable={isWideVersion}
+                    emulateTouch={isWideVersion}
                     dynamicHeight={true}
                     infiniteLoop={true}
                     interval={5000}

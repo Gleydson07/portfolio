@@ -7,7 +7,7 @@ import { Skills } from '../Skills/Index';
 import { ProfessionalAndAcademicData } from './ProfessionalAndAcademicData';
 
 export function Dashboard(){
-    const [myAge, setMyAge] = useState<number>();    
+    const [myAge, setMyAge] = useState<number>();
     const isWideVersion = useBreakpointValue({
         base: false,
         lg: true
