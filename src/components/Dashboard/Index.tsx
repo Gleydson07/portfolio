@@ -28,7 +28,7 @@ export function Dashboard(){
             w="100%"
             minW={["100%", "700px"]}
             borderRadius="0.5rem"
-            bg={["dark.100", "dark.50"]}
+            bg={["dark.50", "dark.50"]}
             mb="1rem"
         >
             {isWideVersion && 
