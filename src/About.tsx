@@ -25,7 +25,7 @@ export function About(){
     const [myAge, setMyAge] = useState<number>();    
     const isWideVersion = useBreakpointValue({
         base: false,
-        lg: true
+        md: true
     })
 
    useEffect(() => {

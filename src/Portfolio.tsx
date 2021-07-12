@@ -18,7 +18,7 @@ export function PortFolio(){
     const [value, setValue] = useState("");
     const isWideVersion = useBreakpointValue({
         base: false,
-        lg: true
+        md: true
     })
 
     useEffect(() => {

@@ -1,8 +1,7 @@
-import React from 'react'
 import { Home } from "./Home";
 import { About } from './About';
 import { PortFolio } from './Portfolio';
-import { Header } from './components/Header';
+import { Header } from './components/Header/Index';
 
 import { ChakraProvider } from '@chakra-ui/react';
 
@@ -16,8 +15,8 @@ function App() {
     <ChakraProvider theme={theme}>
       <Header/>
       <Home/>
-      <About />
-      <PortFolio />
+      {/* <About /> */}
+      {/* <PortFolio /> */}
       <Particles
         options={{
           backgroundMode: {
