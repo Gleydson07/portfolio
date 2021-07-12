@@ -24,10 +24,9 @@ export function Home(){
                 w="100%"
                 justify="space-between"
                 maxW={["100%", "1100px"]}
-                mx="auto"
             >
                 <WelcomeBox/>
-                
+
                 {isWideVersion &&
                     <Box
                         flex="1" 
@@ -50,7 +49,7 @@ export function Home(){
             <Button 
                 as="a"
                 href="#about"
-                mt={["2rem", "3.5rem"]}
+                mt={["3rem", "3.5rem"]}
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
                 height={["3rem", "5rem"]}
                 width={["3rem", "5rem"]}

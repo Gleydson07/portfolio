@@ -1,8 +1,7 @@
-import { Flex, Text, Box, Image, Icon, useBreakpointValue, Grid, Link } from '@chakra-ui/react';
-import { SiLinkedin, SiGithub, SiWhatsapp, SiGmail } from 'react-icons/si'
+import { Flex, Text, Box, Image, useBreakpointValue } from '@chakra-ui/react';
 
-import meMobileImg from '../images/me/me-mobile.jpeg'
 import Typed from 'react-typed';
+import meMobileImg from '../images/me/me-mobile.jpeg'
 import { SocialMedia } from './Header/SocialMedia';
 
 export function WelcomeBox(){
@@ -23,7 +22,7 @@ export function WelcomeBox(){
             w="500px"
             flex={isWideVersion ? 4 : ''}
             pr={["0rem", "2rem"]}
-            mx="auto"
+            mx={isWideVersion ? '' : 'auto'}
         >
             {!isWideVersion &&
                 <Flex

@@ -1,4 +1,4 @@
-import { Flex, Text, Grid, Icon, Link, GridItem } from '@chakra-ui/react'
+import { Grid, Icon, Link, GridItem } from '@chakra-ui/react'
 
 import { SiLinkedin, SiGithub, SiWhatsapp, SiGmail } from 'react-icons/si'
 
