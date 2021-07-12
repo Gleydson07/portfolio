@@ -6,7 +6,6 @@ export function Skills(){
         <Flex
             flex="1"
             flexDir="column"
-            align="left"
             lineHeight="1.5rem"
         >
             <Text

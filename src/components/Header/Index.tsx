@@ -13,8 +13,8 @@ export function Header(){
             position="fixed"
             alignItems="center"
             justifyContent='center'
-            w="100vw"
             zIndex="10"
+            w="100vw"
             bg="black"
         >
             <Flex

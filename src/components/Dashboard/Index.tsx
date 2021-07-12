@@ -28,7 +28,7 @@ export function Dashboard(){
             w="100%"
             minW={["100%", "700px"]}
             borderRadius="0.5rem"
-            bg={["dark.50", "dark.50"]}
+            bg={["dark.100", "dark.50"]}
             mb="1rem"
         >
             {isWideVersion && 
@@ -49,7 +49,10 @@ export function Dashboard(){
                         <Text as="span" fontSize="sm">{myAge} anos</Text>
                     </Flex>
 
-                    <Flex flexDir="column" ml="2rem">
+                    <Flex 
+                        flexDir="column" 
+                        ml="2rem"
+                    >
                         <Box >
                             <Icon as={AiOutlineMail}/>
                             <Text fontSize="md" as="span" ml="0.5rem"> gassantos.dev@gmail.com</Text><br/>

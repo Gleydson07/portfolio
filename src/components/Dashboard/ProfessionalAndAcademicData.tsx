@@ -10,7 +10,6 @@ export function ProfessionalAndAcademicData(){
         <Flex
             flex="3"
             flexDir="column"
-            align="left"
             lineHeight="1.5rem"
         >
             <Text 
