@@ -19,7 +19,6 @@ import dashboardMarketImg from "../../images/jobs/market/market-mobile.png"
 import homeWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/home.png"
 import confirmWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/confirm.png"
 import questionWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/question.png"
-import statisticsWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/statistics.png"
 import resumeWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/resume.png"
 import reloadWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/reload.png"
 
@@ -96,11 +95,10 @@ export function Jobs(){
                 <Card                                
                     images={[
                         homeWhatsTheAnswer, 
+                        reloadWhatsTheAnswer, 
                         confirmWhatsTheAnswer, 
                         questionWhatsTheAnswer, 
-                        statisticsWhatsTheAnswer, 
                         resumeWhatsTheAnswer, 
-                        reloadWhatsTheAnswer, 
                     ]}
                     title="Whats the answer?"
                     description="Desafio proposto durante um processo seletivo para 
