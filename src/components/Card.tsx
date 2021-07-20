@@ -1,4 +1,4 @@
-import { Flex, Text, Image, Box, Link, Icon, useBreakpointValue } from '@chakra-ui/react'
+import { Flex, Text, Image, Box, Link, Icon, useBreakpointValue, Tooltip } from '@chakra-ui/react'
 import { Carousel } from 'react-responsive-carousel';
 
 import {SiGithub} from 'react-icons/si'
@@ -11,7 +11,10 @@ interface ICardProps {
     images: string[];
     title: string;
     description: string;
-    technology: IconType[];
+    technology: {
+        icon: IconType,
+        tooltip: String
+    }[];
     repository: string;
     page?: string;
 }
@@ -86,13 +89,17 @@ export function Card({images, title, description, technology, repository, page}:
                 </Text>
 
                 <Box textAlign="right" mb="0.25rem">
-                    {technology.map(icon => 
-                        <Icon key={String(icon)}
-                            as={icon} 
-                            fontSize="18"
-                            color="gray.500"
-                            mx="0.25rem"
-                        />    
+                    {technology.map((item) => 
+                        <Tooltip label={item.tooltip} fontSize="xs">
+                            <span>
+                                <Icon key={String(item.icon)}
+                                    as={item.icon} 
+                                    fontSize="18"
+                                    color="gray.500"
+                                    mx="0.25rem"
+                                />
+                            </span>
+                        </Tooltip>
                     )}
                 </Box>
             
