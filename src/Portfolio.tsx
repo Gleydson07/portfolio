@@ -57,7 +57,7 @@ export function PortFolio(){
             {isWideVersion && 
                 <Button
                     as="a"
-                    href="#home"      
+                    href="#"      
                     my="1rem"
                     height={["3rem", "5rem"]}
                     width={["3rem", "5rem"]}

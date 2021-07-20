@@ -82,7 +82,7 @@ export function About(){
                         </Button>
                         <Button
                             as="a"
-                            href="#home"      
+                            href="#"      
                             my="0.75rem"
                             height="4rem"
                             width="4rem"
