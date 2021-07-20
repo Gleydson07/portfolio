@@ -12,15 +12,15 @@ import {
 import {FaAsterisk} from 'react-icons/fa';
 import { Card } from '../Card'
 
-import homePokemonEduImg from "../../images/jobs/pokemon-edu/pokemon-home.png"
-import dashboardPokemonEduImg from "../../images/jobs/pokemon-edu/pokemon-dashboard.png"
-import homeMarketImg from "../../images/jobs/market/market-home.png"
-import dashboardMarketImg from "../../images/jobs/market/market-mobile.png"
-import homeWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/home.png"
-import confirmWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/confirm.png"
-import questionWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/question.png"
-import resumeWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/resume.png"
-import reloadWhatsTheAnswer from "../../images/jobs/whatsTheAnswer/reload.png"
+import homePokemonEduImg from "../../images/jobs/pokemon-edu/home.png"
+import dashboardPokemonEduImg from "../../images/jobs/pokemon-edu/dashboard.png"
+import homeMarketImg from "../../images/jobs/market/home.png"
+import dashboardMarketImg from "../../images/jobs/market/mobile.png"
+import homeWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/home.png"
+import confirmWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/confirm.png"
+import questionWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/question.png"
+import resumeWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/resume.png"
+import reloadWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/reload.png"
 
 export function Jobs(){
     return (
@@ -30,6 +30,38 @@ export function Jobs(){
             align="center"
             borderRadius="0.5rem"
         >
+            <GridItem>
+                <Card                                
+                    images={[
+                        homeWhatsTheAnswerImg, 
+                        reloadWhatsTheAnswerImg, 
+                        confirmWhatsTheAnswerImg, 
+                        questionWhatsTheAnswerImg, 
+                        resumeWhatsTheAnswerImg, 
+                    ]}
+                    title="Whats the answer?"
+                    description="Desafio proposto durante um processo seletivo para 
+                    desenvolvedor frontend. Trata-se de um formulário de perguntas 
+                    e respostas sobre assuntos diversos, ao fim temos um resumo das 
+                    respostas."
+                    technology={[
+                        {
+                            icon: SiTypescript,
+                            tooltip: "Typescript"
+                        }, 
+                        {
+                            icon: SiMaterialUi,
+                            tooltip: "Material-UI"
+                        },
+                        {
+                            icon: FaAsterisk,
+                            tooltip: "* Formik"
+                        }
+                    ]}
+                    repository="https://github.com/Gleydson07/whats_the_answer"
+                    page= "https://whatstheanswer.vercel.app/"
+                />
+            </GridItem>
             <GridItem>
                 <Card                                
                     images={[
@@ -89,38 +121,6 @@ export function Jobs(){
                         }
                     ]}
                     repository="https://github.com/Gleydson07/market"
-                />
-            </GridItem>
-            <GridItem>
-                <Card                                
-                    images={[
-                        homeWhatsTheAnswer, 
-                        reloadWhatsTheAnswer, 
-                        confirmWhatsTheAnswer, 
-                        questionWhatsTheAnswer, 
-                        resumeWhatsTheAnswer, 
-                    ]}
-                    title="Whats the answer?"
-                    description="Desafio proposto durante um processo seletivo para 
-                    desenvolvedor frontend. Trata-se de um formulário de perguntas 
-                    e respostas sobre assuntos diversos, ao fim temos um resumo das 
-                    respostas."
-                    technology={[
-                        {
-                            icon: SiTypescript,
-                            tooltip: "Typescript"
-                        }, 
-                        {
-                            icon: SiMaterialUi,
-                            tooltip: "Material-UI"
-                        },
-                        {
-                            icon: FaAsterisk,
-                            tooltip: "* Formik"
-                        }
-                    ]}
-                    repository="https://github.com/Gleydson07/whats_the_answer"
-                    page= "https://whatstheanswer.vercel.app/"
                 />
             </GridItem>
         </Grid>
