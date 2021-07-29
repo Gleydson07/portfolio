@@ -1,6 +1,7 @@
 import { Home } from "./Home";
 import { About } from './About';
 import { PortFolio } from './Portfolio';
+import { NavigateProvider } from "./hooks/useNavigate";
 import { Header } from './components/Header/Index';
 
 import { ChakraProvider } from '@chakra-ui/react';
@@ -13,10 +14,12 @@ import 'animate.css';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <Header/>
-      <Home/>
-      <About />
-      <PortFolio />
+      <NavigateProvider>
+        <Header/>
+        <Home/>
+        <About />
+        <PortFolio />
+      </NavigateProvider>
       <Particles
         options={{
           backgroundMode: {

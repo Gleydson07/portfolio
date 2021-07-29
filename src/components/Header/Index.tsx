@@ -2,10 +2,10 @@ import { Flex, Grid, IconButton, Link, Menu, MenuButton, MenuList, useBreakpoint
 
 import { Logo } from './Logo'
 import { RiMenuLine } from 'react-icons/ri'
-import { useState } from 'react'
+import { useNavigate } from '../../hooks/useNavigate'
 
 export function Header(){
-    const [activeLink, setActiveLink] = useState("home")
+    const {activeLink, setActiveLinkProps} = useNavigate();
     const isWideVersion = useBreakpointValue({
         base: false,
         md: true
@@ -47,7 +47,7 @@ export function Header(){
                             color={activeLink === "home" ? "#76E4F7" : "#00B5D8"}
                             fontWeight={activeLink === "home" ? "bold" : "normal"}                            
                             _hover={{textDecor:"none", color: "#9DECF9"}}
-                            onClick={() => setActiveLink("home")}
+                            onClick={() => setActiveLinkProps("home")}
                         >
                             Início
                         </Link>
@@ -58,7 +58,7 @@ export function Header(){
                             color={activeLink === "about" ? "#76E4F7" : "#00B5D8"}
                             fontWeight={activeLink === "about" ? "bold" : "normal"}                            
                             _hover={{textDecor:"none", color: "#9DECF9"}}
-                            onClick={() => setActiveLink("about")}
+                            onClick={() => setActiveLinkProps("about")}
                         >
                             Sobre
                         </Link>
@@ -69,7 +69,7 @@ export function Header(){
                             color={activeLink === "portfolio" ? "#76E4F7" : "#00B5D8"}
                             fontWeight={activeLink === "portfolio" ? "bold" : "normal"}                            
                             _hover={{textDecor:"none", color: "#9DECF9"}}
-                            onClick={() => setActiveLink("portfolio")}
+                            onClick={() => setActiveLinkProps("portfolio")}
                         >
                             Portfólio
                         </Link>
@@ -114,8 +114,7 @@ export function Header(){
                             </Flex>
                         </MenuList>
                     </Menu>
-                )}
-                
+                )}                
             </Flex>
         </Flex>
     )

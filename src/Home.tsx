@@ -2,9 +2,11 @@ import { Flex, Box, Button, Image, Icon, useBreakpointValue } from '@chakra-ui/r
 
 import {TiArrowDownThick} from 'react-icons/ti'
 import { WelcomeBox } from './components/WelcomeBox';
+import { useNavigate } from './hooks/useNavigate';
 import IImg from './images/me/me.jpg'
 
 export function Home(){
+    const {setActiveLinkProps} = useNavigate();
     const isWideVersion = useBreakpointValue({
         base: false,
         lg: true
@@ -49,6 +51,7 @@ export function Home(){
             <Button 
                 as="a"
                 href="#about"
+                onClick={() => setActiveLinkProps("about")}
                 mt={["3rem", "3.5rem"]}
                 className="animate__animated animate__delay-2s animate__slower animate__flip animate__bounceInUp"
                 height={["3rem", "5rem"]}
