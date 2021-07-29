@@ -1,13 +1,16 @@
 import { Flex, Grid, IconButton, Link, Menu, MenuButton, MenuList, useBreakpointValue } from '@chakra-ui/react'
+
 import { Logo } from './Logo'
-
 import { RiMenuLine } from 'react-icons/ri'
+import { useState } from 'react'
 
-export function Header(){    
+export function Header(){
+    const [activeLink, setActiveLink] = useState("home")
     const isWideVersion = useBreakpointValue({
         base: false,
         md: true
     })
+
     return (
         <Flex
             as="header"
@@ -41,10 +44,10 @@ export function Header(){
                             href="#home"
                             w="5rem"
                             transition="all 0.2s"
-                            color="#00B5D8"
-                            _hover={{fontWeight:"bold", color:"#76E4F7"}}
-                            outline="none"
-                            border="none"
+                            color={activeLink === "home" ? "#76E4F7" : "#00B5D8"}
+                            fontWeight={activeLink === "home" ? "bold" : "normal"}                            
+                            _hover={{textDecor:"none", color: "#9DECF9"}}
+                            onClick={() => setActiveLink("home")}
                         >
                             Início
                         </Link>
@@ -52,8 +55,10 @@ export function Header(){
                             href="#about"
                             w="5rem"
                             transition="all 0.2s"
-                            color="#00B5D8"
-                            _hover={{fontWeight:"bold", color:"#76E4F7"}}
+                            color={activeLink === "about" ? "#76E4F7" : "#00B5D8"}
+                            fontWeight={activeLink === "about" ? "bold" : "normal"}                            
+                            _hover={{textDecor:"none", color: "#9DECF9"}}
+                            onClick={() => setActiveLink("about")}
                         >
                             Sobre
                         </Link>
@@ -61,8 +66,10 @@ export function Header(){
                             href="#portfolio"
                             w="5rem"
                             transition="all 0.2s"
-                            color="#00B5D8"
-                            _hover={{fontWeight:"bold", color:"#76E4F7"}}
+                            color={activeLink === "portfolio" ? "#76E4F7" : "#00B5D8"}
+                            fontWeight={activeLink === "portfolio" ? "bold" : "normal"}                            
+                            _hover={{textDecor:"none", color: "#9DECF9"}}
+                            onClick={() => setActiveLink("portfolio")}
                         >
                             Portfólio
                         </Link>
