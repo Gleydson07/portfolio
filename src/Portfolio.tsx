@@ -1,19 +1,14 @@
 import { useEffect, useState } from 'react';
-import { Flex, Text, Button, Icon, useBreakpointValue } from '@chakra-ui/react'
+import { Flex, Text } from '@chakra-ui/react'
 
 import Typed from 'react-typed';
 import VisibilitySensor from "react-visibility-sensor";
-import {TiArrowUpThick} from 'react-icons/ti';
 import { Jobs } from './components/Jobs/Index';
 
 export function PortFolio(){
     const [isVisible, setIsVisible] = useState(false);
     const [showAnimation, setShowAnimation] = useState(false);
     const [value, setValue] = useState("");
-    const isWideVersion = useBreakpointValue({
-        base: false,
-        md: true
-    })
 
     useEffect(() => {
         isVisible ? setShowAnimation(true) : setShowAnimation(false);
@@ -54,30 +49,6 @@ export function PortFolio(){
 
                 <Jobs/>                    
             </Flex> 
-            {isWideVersion && 
-                <Button
-                    as="a"
-                    href="#"      
-                    my="1rem"
-                    height={["3rem", "5rem"]}
-                    width={["3rem", "5rem"]}
-                    color="gray.700"
-                    bg="transparent"
-                    fontSize="1.125rem"
-                    fontWeight="700"
-                    transition="all 0.3s"
-                    _hover={{
-                        color: "cyan.700", 
-                        fontSize: "3rem",
-                        fontWeight: "900"
-                    }}
-                >
-                    <Icon 
-                        as={TiArrowUpThick} 
-                        fontSize="3.5rem" 
-                    />
-                </Button>
-            }           
         </Flex>
     )
 }

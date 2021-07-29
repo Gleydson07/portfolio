@@ -10,11 +10,6 @@ export function WelcomeBox(){
         lg: true
     })
 
-    const isMiddleVersion = useBreakpointValue({
-        base: false,
-        md: true
-    })
-
     return (
         <Box
             maxW="600px"
@@ -42,6 +37,12 @@ export function WelcomeBox(){
                         h="80px"
                     />
                 </Flex>                
+            }
+
+            {isWideVersion &&
+                <Box mb="1rem">
+                    <SocialMedia />
+                </Box>
             }
 
             <Text
@@ -119,7 +120,7 @@ export function WelcomeBox(){
                     </Text>
                 </>
             ):(
-                !isMiddleVersion ? <SocialMedia/> : ''
+                <SocialMedia/>
             )}
         </Box>
 
