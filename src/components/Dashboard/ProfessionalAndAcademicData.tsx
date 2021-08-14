@@ -38,8 +38,8 @@ export function ProfessionalAndAcademicData(){
                                 alignItems="center"
                                 color="gray.400"                                      
                             >
-                                <Text fontSize="xs" color="gray.400" > Sua empresa aqui</Text>
-                                <Text fontSize="sm" mx="0.5rem" color="gray.400" >🥰 - Forever</Text>
+                                <Text fontSize="xs" color="gray.400" > VIPy | Movimento Compre & Confie </Text>
+                                <Text fontSize="sm" mx="0.5rem" color="gray.400" >Agosto de 2021 - Atualmente</Text>
                             </Flex>
                         </Box>
                     </Box>
