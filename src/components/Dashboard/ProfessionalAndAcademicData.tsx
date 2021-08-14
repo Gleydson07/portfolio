@@ -39,7 +39,7 @@ export function ProfessionalAndAcademicData(){
                                 color="gray.400"                                      
                             >
                                 <Text fontSize="xs" color="gray.400" > VIPy | Movimento Compre & Confie </Text>
-                                <Text fontSize="sm" mx="0.5rem" color="gray.400" >Agosto de 2021 - Atualmente</Text>
+                                <Text fontSize="sm" mx="0.5rem" color="gray.400" >2021 - Atualmente</Text>
                             </Flex>
                         </Box>
                     </Box>
@@ -52,7 +52,7 @@ export function ProfessionalAndAcademicData(){
                                 color="gray.400"                                      
                             >
                                 <Text fontSize="xs" color="gray.400" > Centro Universitário CESMAC</Text>
-                                <Text fontSize="sm" mx="0.5rem" color="gray.400" >- 03/2018</Text>
+                                <Text fontSize="sm" mx="0.5rem" color="gray.400" >- 2018</Text>
                             </Flex>
                         </Box>
                     </Box>
@@ -69,17 +69,6 @@ export function ProfessionalAndAcademicData(){
                             >
                                 <Text fontSize="xs" color="gray.400" > Rocketseat</Text>
                                 <Text fontSize="sm" mx="0.5rem" color="gray.400" > - 2021</Text>
-                            </Flex>
-                        </Box>
-
-                        <Box mt="0.5rem">
-                            <Text fontSize="md" color="gray.50">Fullstack developer Santander</Text>
-                            <Flex
-                                alignItems="center"
-                                color="gray.400"                                      
-                            >
-                                <Text fontSize="xs" color="gray.400" > Digital Innovation One</Text>
-                                <Text fontSize="sm" mx="0.5rem" color="gray.400" > - atualmente</Text>
                             </Flex>
                         </Box>
                     </Box>          
