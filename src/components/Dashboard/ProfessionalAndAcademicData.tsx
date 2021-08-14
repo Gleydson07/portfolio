@@ -33,7 +33,7 @@ export function ProfessionalAndAcademicData(){
                     <Box>
                         <Text color="purple.400" fontSize="md" fontWeight="500">Experiências Profissionais</Text>
                         <Box lineHeight="1.25rem">
-                            <Text fontSize="md" color="gray.50">Em busca!! </Text>
+                            <Text fontSize="md" color="gray.50">Desenvolvedor ReactJS </Text>
                             <Flex
                                 alignItems="center"
                                 color="gray.400"                                      
