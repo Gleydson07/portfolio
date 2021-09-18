@@ -71,6 +71,16 @@ export function ProfessionalAndAcademicData(){
                                 <Text fontSize="sm" mx="0.5rem" color="gray.400" > - 2021</Text>
                             </Flex>
                         </Box>
+                        <Box >
+                            <Text fontSize="lg" color="gray.50">React Native</Text>
+                            <Flex
+                                alignItems="center"
+                                color="gray.400"                                      
+                            >
+                                <Text fontSize="xs" color="gray.400" > Rocketseat</Text>
+                                <Text fontSize="sm" mx="0.5rem" color="gray.400" > - 2021</Text>
+                            </Flex>
+                        </Box>
                     </Box>          
                 </GridItem>
 
