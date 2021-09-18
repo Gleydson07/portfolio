@@ -4,7 +4,7 @@ import { Flex, Text } from '@chakra-ui/react';
 import VisibilitySensor from "react-visibility-sensor";
 import Typed from 'react-typed';
 
-import { Dashboard } from './components/Dashboard/Index';
+import { Dashboard } from '../components/Dashboard/Index';
 
 export function About(){
     const [isVisible, setIsVisible] = useState(false);

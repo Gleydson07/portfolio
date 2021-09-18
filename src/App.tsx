@@ -1,6 +1,6 @@
-import { Home } from "./Home";
-import { About } from './About';
-import { PortFolio } from './Portfolio';
+import { Home } from "./pages/Home";
+import { About } from './pages/About';
+import { PortFolio } from './pages/Portfolio';
 import { NavigateProvider } from "./hooks/useNavigate";
 import { Header } from './components/Header/Index';
 

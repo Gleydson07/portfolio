@@ -1,9 +1,9 @@
 import { Flex, Box, Button, Image, Icon, useBreakpointValue } from '@chakra-ui/react';
 
 import {TiArrowDownThick} from 'react-icons/ti'
-import { WelcomeBox } from './components/WelcomeBox';
-import { useNavigate } from './hooks/useNavigate';
-import IImg from './images/me/me.jpeg'
+import { WelcomeBox } from '../components/WelcomeBox';
+import { useNavigate } from '../hooks/useNavigate';
+import IImg from '../images/me/me.jpeg'
 
 export function Home(){
     const {setActiveLinkProps} = useNavigate();

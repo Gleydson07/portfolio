@@ -1,4 +1,4 @@
-import { Image } from '@chakra-ui/react';
+import { Image, Flex} from '@chakra-ui/react';
 
 import reactImg from '../../images/technologies/reactjs.png'
 import cssImg from '../../images/technologies/css-3.png'
@@ -13,7 +13,7 @@ import figmaImg from '../../images/technologies/figma.png'
 
 export function Technologies(){
     return (
-        <>
+        <Flex justifyContent="space-between" px={["0rem", "2rem"]}>
             <Image src={javascriptImg} alt="javascript" h={["24px", "36px"]}/>
             <Image src={htmlImg} alt="html" h={["24px", "36px"]}/>
             <Image src={cssImg} alt="CSS" h={["24px", "36px"]}/>
@@ -24,6 +24,6 @@ export function Technologies(){
             <Image src={vscodeImg} alt="vscode" h={["24px", "36px"]}/>
             <Image src={gitImg} alt="git" h={["24px", "36px"]}/>
             <Image src={figmaImg} alt="figma" h={["24px", "36px"]}/>
-        </>
+        </Flex>
     )
 }

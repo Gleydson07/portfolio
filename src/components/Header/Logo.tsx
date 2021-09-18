@@ -12,7 +12,7 @@ export function Logo(){
             <Text
                 color="purple.400"
                 fontWeight="300"
-                fontSize="2xl"
+                fontSize="4xl"
             >
                 @
             </Text>

@@ -94,9 +94,7 @@ export function ProfessionalAndAcademicData(){
 
                 >
                     <Text color="purple.400" fontSize="md" fontWeight="500">Tecnologias e Frameworks</Text>
-                    <Grid templateColumns="repeat(10, 1fr)" mt="1rem" gap="0.25rem">
-                        <Technologies/>
-                    </Grid>
+                    <Technologies/>
                 </GridItem>
             </Grid>
         </Flex>

@@ -3,7 +3,7 @@ import { Flex, Text } from '@chakra-ui/react'
 
 import Typed from 'react-typed';
 import VisibilitySensor from "react-visibility-sensor";
-import { Jobs } from './components/Jobs/Index';
+import { Jobs } from '../components/Jobs/Index';
 
 export function PortFolio(){
     const [isVisible, setIsVisible] = useState(false);
