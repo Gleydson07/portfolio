@@ -93,7 +93,7 @@ export function ProfessionalAndAcademicData(){
                     bottom="0.5rem"
 
                 >
-                    <Text color="purple.400" fontSize="md" fontWeight="500">Tecnologias e Frameworks</Text>
+                    <Text color="purple.400" fontSize="md" fontWeight="500" mb="0.25rem">Tecnologias e Frameworks</Text>
                     <Technologies/>
                 </GridItem>
             </Grid>
