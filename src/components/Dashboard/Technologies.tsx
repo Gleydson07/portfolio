@@ -20,7 +20,7 @@ export function Technologies(){
             <Image src={reactImg} alt="react" h={["24px", "36px"]}/>
             <Image src={nextImg} alt="next" h={["24px", "36px"]}/>
             <Image src={typescriptImg} alt="typescript" h={["24px", "36px"]}/>
-            <Image src={nodeImg} alt="node" h={["24px", "36px"]}/>
+            {/* <Image src={nodeImg} alt="node" h={["24px", "36px"]}/> */}
             <Image src={vscodeImg} alt="vscode" h={["24px", "36px"]}/>
             <Image src={gitImg} alt="git" h={["24px", "36px"]}/>
             <Image src={figmaImg} alt="figma" h={["24px", "36px"]}/>

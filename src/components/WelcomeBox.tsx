@@ -86,7 +86,7 @@ export function WelcomeBox(){
             >
                 <>
                     <Typed
-                        strings={['Sou estudante.', `Sou desenvolvedor frontend.`, `Sou estudante e desenvolvedor frontend.`]}
+                        strings={['Gosto de aprender e compartilhar conhecimento.', `Sou desenvolvedor frontend.`]}
                         typeSpeed={50}
                         backSpeed={50}
                         showCursor={true}

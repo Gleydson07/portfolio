@@ -38,7 +38,7 @@ export function ProfessionalAndAcademicData(){
                                 alignItems="center"
                                 color="gray.400"                                      
                             >
-                                <Text fontSize="xs" color="gray.400" > VIPy | Movimento Compre & Confie </Text>
+                                <Text fontSize="xs" color="gray.400" > Confi </Text>
                                 <Text fontSize="sm" mx="0.5rem" color="gray.400" >2021 - Atualmente</Text>
                             </Flex>
                         </Box>
@@ -78,7 +78,7 @@ export function ProfessionalAndAcademicData(){
                                 color="gray.400"                                      
                             >
                                 <Text fontSize="xs" color="gray.400" > Rocketseat</Text>
-                                <Text fontSize="sm" mx="0.5rem" color="gray.400" > - 2021</Text>
+                                <Text fontSize="sm" mx="0.5rem" color="gray.400" > - 2022</Text>
                             </Flex>
                         </Box>
                     </Box>          

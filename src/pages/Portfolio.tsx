@@ -21,6 +21,7 @@ export function PortFolio(){
             w="100%"
             h="100%"
             minH="100vh"
+            mb="2rem"
             flexDir="column"
             alignItems="center"
             justifyContent='center'

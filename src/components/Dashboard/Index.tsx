@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Flex, Text, Image, Box, Icon, useBreakpointValue } from '@chakra-ui/react';
 
-import meImg from '../../images/me/g1.png'
+import meImg from '../../images/me/me.jpeg'
 import {AiOutlineMail, AiOutlinePhone} from 'react-icons/ai'
 import { Skills } from '../Skills/Index';
 import { ProfessionalAndAcademicData } from './ProfessionalAndAcademicData';

@@ -15,7 +15,7 @@ interface ICardProps {
         icon: IconType,
         tooltip: String
     }[];
-    repository: string;
+    repository?: string;
     page?: string;
 }
 
@@ -110,25 +110,27 @@ export function Card({images, title, description, technology, repository, page}:
                     position="absolute"
                     bottom="1rem"
                 >
-                    <Link href={repository} isExternal  mx="0.5rem">
-                        <Icon 
-                            as={SiGithub} 
-                            fontSize="24"
-                            transition="color 0.3s"
-                            color="cyan.300"
-                            _hover={{color: "cyan.600"}}
-                        />
-                    </Link>
                     {page && (
-                        <Link href={page} isExternal mx="0.5rem">
-                            <Icon 
-                                as={AiOutlineGlobal} 
-                                fontSize="24"
-                                transition="color 0.3s"
-                                color="cyan.300"
-                                _hover={{color: "cyan.600"}}
-                            />
-                        </Link>
+                        <>
+                            <Link href={repository} isExternal  mx="0.5rem">
+                                <Icon 
+                                    as={SiGithub} 
+                                    fontSize="24"
+                                    transition="color 0.3s"
+                                    color="cyan.300"
+                                    _hover={{color: "cyan.600"}}
+                                />
+                            </Link>
+                            <Link href={page} isExternal mx="0.5rem">
+                                <Icon 
+                                    as={AiOutlineGlobal} 
+                                    fontSize="24"
+                                    transition="color 0.3s"
+                                    color="cyan.300"
+                                    _hover={{color: "cyan.600"}}
+                                />
+                            </Link>
+                        </>
                     )}
                 </Box>
             </Box>

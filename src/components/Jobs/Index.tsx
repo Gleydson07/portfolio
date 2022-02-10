@@ -7,7 +7,8 @@ import {
     SiFirebase, 
     SiSass, 
     SiReact,
-    SiMaterialUi
+    SiMaterialUi,
+    SiStyledComponents
 } from 'react-icons/si';
 import {FaAsterisk} from 'react-icons/fa';
 import { Card } from '../Card'
@@ -21,6 +22,10 @@ import confirmWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/confirm.p
 import questionWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/question.png"
 import resumeWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/resume.png"
 import reloadWhatsTheAnswerImg from "../../images/jobs/whatsTheAnswer/reload.png"
+import homeBeep from "../../images/jobs/beep/home.png"
+import dashboardBeep from "../../images/jobs/beep/dashboard.png"
+import formBeep from "../../images/jobs/beep/form.png"
+import modalBeep from "../../images/jobs/beep/modal.png"
 
 export function Jobs(){
     return (
@@ -30,6 +35,28 @@ export function Jobs(){
             align="center"
             borderRadius="0.5rem"
         >
+            <GridItem>
+                <Card                                
+                    images={[
+                        homeBeep, 
+                        dashboardBeep, 
+                        modalBeep, 
+                        formBeep, 
+                    ]}
+                    title="Beep"
+                    description="Trabalho freelancer para empresa de soluções financeiras. Foram criados dashboards, modais e formulários, como também controle de acesso e fluxo de autenticação do usuário."
+                    technology={[
+                        {
+                            icon: SiReact,
+                            tooltip: "ReactJS"
+                        }, 
+                        {
+                            icon: SiStyledComponents,
+                            tooltip: "Styled Components"
+                        }
+                    ]}
+                />
+            </GridItem>
             <GridItem>
                 <Card                                
                     images={[
